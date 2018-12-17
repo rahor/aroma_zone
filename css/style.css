@@ -1,0 +1,35 @@
+/* 
+Reset
+*/
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    @import url('./system-font-css.css');
+
+    *{
+        /* Gestion de la taille des blocs */
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+        /* Suppression des marges */
+        padding: 0;
+        margin: 0;
+    }
+
+    html{
+        /* Configuration de la valeur 1rem = 10px */
+        font-size: 62.5%;
+    }
+
+    body{
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        font-size: 1.5rem;
+        background: #ffffff;
+    }
+    
+
+
+    /* max-width
+    #FA96BE
+    #7AF02B
+    #BEFA96
+    */
