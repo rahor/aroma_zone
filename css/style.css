@@ -5,7 +5,7 @@ Reset
     @import url('./system-font-css.css');
     
     :root {
-        --main-bg-color: white;
+        --main-bg-color:   #FA96BE;
       }
 
     *{
@@ -24,13 +24,130 @@ Reset
         font-size: 62.5%;
     }
 
+    img{
+        max-width: 100%;
+    }
     body{
         font-family: 'Rubik', sans-serif;
         font-size: 1.5rem;
-        background-color: var(--main-bg-color);
-      
+        background-color: white;
+        border-bottom: 1rem solid  var(--main-bg-color);
     }
     
+    h3{
+        font-weight: bold;
+        color: var(--main-bg-color);
+    }
+
+    header{
+        text-align: right;
+        padding-top: 2rem;
+        box-shadow: 1px 1px 12px #555;    
+    }
+
+
+    header a{
+        text-decoration: none;  
+        color: black;   
+        font-size: 1.5rem;  
+    }
+    
+    nav{
+        text-transform: uppercase;
+        border-bottom: 0.1px solid gray;
+        padding: 1rem;
+    }
+
+    ul li {
+        display: block;
+    }
+    
+    .deuxiemeNav{
+        text-align: right;
+        padding : 2rem;
+        position: relative;
+    }
+    .deuxiemeNav li {
+        display: inline-block;
+        padding: 2rem;  
+    }
+    .deuxiemeNav li:first-of-type{
+        /* background-color: #FA96BE; */
+        font-family: 'Dancing script', sans-serif;
+        font-size: 2rem;
+        position: absolute;
+        left: 10%;
+    }
+    
+    .logo{
+        max-width: 40%;
+    }
+    
+    .premiereNav{
+       position: relative;
+       text-align: center;
+    }
+
+    .premiereNav li{
+        display: inline-block;
+    }
+
+    .premiereNav li:last-child{
+        /* background-color: blueviolet; */
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width : 25%;
+    }
+
+    .premiereNav a {
+        text-align: center;
+        color:  var(--main-bg-color);
+        padding: 1rem;
+        border: 0.1rem solid  var(--main-bg-color);
+        text-transform: uppercase;
+        border-radius: 4%;
+    }
+    
+ nav ul li{
+    display: inline-block;
+    padding: 2rem;
+    }
+
+
+ .description div{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     /* background-color: aliceblue; */
+ }
+
+
+ .description a{
+     background-color: var(--main-bg-color);
+     padding: 1rem;
+     border-radius: 4px;
+     color: white;
+     width: 50%;
+     text-align: center;
+     text-transform: uppercase;
+ }
+
+ .description p{
+     margin-top: 3rem; 
+ }
+
+select{
+    font-size: 2rem;
+}
+
+ .description img{
+     max-width: 6%;
+ }
+
     article{
         padding-bottom: 3rem;
         padding-top: 3rem;
@@ -52,26 +169,17 @@ Reset
     h2{font-family: 'Rubik', sans-serif;}
 
     .icone{
-        width: 5rem;
+        max-width: 3.5rem;
     }
 
-    header{
-        text-align: center;
-    }
-    header img:first-of-type{
+    /* header img:first-of-type{
         max-width: 30%;
-    }
+    } */
 
     nav{
         text-align: center;
         /* margin: auto 0; */
     }
-
-   nav ul li{
-        display: inline;
-        padding: 2rem;
-    }
-
     
     .sectionProd{
         display: flex;
@@ -86,9 +194,9 @@ Reset
         width: 50%;
     }
     
-    .sectionProd img{
+    /* .sectionProd img{
         width: 80%;
-    }
+    } */
     .articleIcones{
         display:flex;
         flex-wrap: wrap;
@@ -107,26 +215,59 @@ Reset
     
     .sectionProdRelatifs div{
         display: flex;
+        justify-content: space-between;
     }
     
+    .sectionProdRelatifs div article{
+        width: calc(15% - 1rem);
+    }
+
+/*     
     .produitR{
-        max-width: 50%;
+        max-width: 100%;
         text-align: center;
-    }
+    } */
     
+
+    .listeIngredients{
+        display: flex;
+        justify-content: flex-start;
+        /* justify-content: space-around; */
+
+    }
+
+    .listeIngredients ul{
+        padding-right: 2rem;
+    }
     .sectionProdRelatifs article{
         
         text-align: center;
     }
-    
+
+    .avis span{
+        color: var(--main-bg-color);
+        font-weight: bold;
+    }
+
+    /* FOOTER */
     footer{
         max-width: 80%;
         margin: 0 auto;
+        
+    }
+
+
+    .itemFooter li{
+        padding: 1rem;
     }
     
-    .foot{ display: flex;
+    .foot{ 
+        display: flex;
         align-items: center;
-        justify-content: space-around}
+        justify-content: space-around;
+        border-top: 0.1rem solid  var(--main-bg-color);
+        padding: 6rem;
+    }
         
         .foot img{
             width: 30%;
