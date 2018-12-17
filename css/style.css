@@ -28,13 +28,77 @@ Reset
         font-family: 'Rubik', sans-serif;
         font-size: 1.5rem;
         background-color: var(--main-bg-color);
+      
     }
     
+
+    main {
+        max-width: 95%;
+        margin: 0 auto;
+        background-color: bisque;
+    }
+    section{
+        padding-top: 2rem; 
+        padding-bottom: 2rem; 
+    }
     h1{
         font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+    }
+
+    h2{font-family: 'Rubik', sans-serif;}
+
+    .icone{
+        width: 5rem;
+    }
+
+    header{
+        text-align: center;
+    }
+    header img:first-of-type{
+        max-width: 30%;
+    }
+
+    nav{
+        text-align: center;
+        /* margin: auto 0; */
+    }
+    ul li{
+        display: inline;
+        padding: 2rem;
     }
 
 
+    .articleIcones{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .articleIcones div{
+        padding: 2rem;  
+    }
+
+
+    .sectionUtilisation div{
+        display: flex;
+    }
+
+    .sectionProdRelatifs div{
+        display: flex;
+        background-color: rebeccapurple;
+    }
+
+    .produitR{
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .sectionProdRelatifs article{
+       
+        text-align: center;
+    }
     /* max-width
     #FA96BE
     #7AF02B
