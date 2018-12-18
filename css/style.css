@@ -41,12 +41,31 @@ Reset
     }
 
     section{
-        padding-top: 2rem; 
-        padding-bottom: 2rem; 
+        padding-top: 4rem; 
+        padding-bottom: 4rem; 
     }
-    
+
+
     article{
         margin-top: 1rem;
+    }
+    
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.5rem;
+        padding-bottom: 1rem; 
+    }
+
+    p{
+        margin-top : 2rem; 
+        /* width: 80%; */
+    }
+    h2{
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .icone{
+        max-width: 3.5rem;
     }
 /**/
  
@@ -106,6 +125,7 @@ Reset
         text-transform: uppercase;
         border-bottom: 0.1px solid gainsboro;
         padding: 1rem;
+        text-align: center; 
     }
     
     nav ul li{
@@ -113,24 +133,26 @@ Reset
        padding: 2rem;
        }
 
-/* Menus sticky */
+
+    
+/* Deuxieme navigation propre au produit     */
+     /* Menus sticky */
     .sticky {
         position: fixed;
         top: 0;
         width: 100%;
       }
+      
+    .deuxiemeNav{
+       text-align: right;
+       padding : 2rem;
+       position: relative;
+       background-color: white;  
+       }
     
-/* Deuxieme navigation propre au produit     */
-     .deuxiemeNav{
-        text-align: right;
-        padding : 2rem;
-        position: relative;
-        background-color: white;
-        
-    }
     .deuxiemeNav li {
-        display: inline-block;
-        padding: 2rem;  
+       display: inline-block;
+       padding: 2rem;  
     }
 
     /* Premier texte du sous menu, situé à gauche */
@@ -141,11 +163,26 @@ Reset
         left: 10%;
         bottom: 20%;
     }
+
+    /* Icones de feuilles de la nav*/
+    .iconeF{
+        width: 2rem;
+        vertical-align: middle; 
+    }
 /*
 FIN HEADER
 */    
 
 /* SECTION PRODUITS */
+
+    /* Mise en ligne des 2 articles, le produit et la description */
+    .sectionUtilisation article{
+        width: calc(50% - 2rem);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+
     /* Prix centré et entre 2 traits */
     .center{
         text-align: center;
@@ -170,142 +207,45 @@ FIN HEADER
         margin-left: 3rem 
     }
     
-      
-    
-    
-
-
 /* A CHANGER */
- .description div{
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
- }
-
-/* bouton Ajouter */
- .description a{
-     background-color: var(--main-bg-color);
-     padding: 1.5rem;
-     border-radius: 4px;
-     color: white;
-     width: 50%;
-     text-align: center;
-     text-transform: uppercase;
- }
-
- /* Descendre le texte de la description */
- .sectionProd article:last-of-type{
-     padding-top : 5rem; 
- }
-
-
-select{
-    font-size: 2rem;
-}
-
- .description img{
-     max-width: 6%;
- }
-
-
-
-   
-    h1{
-        font-family: 'Dancing Script', cursive;
-        font-size: 3.5rem;
-        padding-bottom: 1rem; 
-    }
-
-    p{
-        margin-top : 2rem; 
-        /* width: 80%; */
-    }
-    h2{font-family: 'Rubik', sans-serif;
-    }
-
-    .icone{
-        max-width: 3.5rem;
-    }
-
-    section{
-        padding-top: 4rem; 
-        padding-bottom: 4rem; 
-    }
-
-    .iconeF{
-        width: 2rem;
-        vertical-align: middle; 
-    }
-    /* header img:first-of-type{
-        max-width: 30%;
-    } */
-
-    nav{
-        text-align: center;
-        /* margin: auto 0; */
-    }
-
-
-    .sectionUtilisation article{
-        width: calc(50% - 2rem);
-        display: inline-block;
-        vertical-align: top;
-    }
-
-
-    /* .sectionUtilisation p{
-        min-height: 13rem;
-    } */
-
-    .sectionPerso article:last-of-type{
+    /* Partie de droite */
+    .description div{
         display: flex;
+        justify-content: space-around;
         align-items: center;
     }
 
-    .perso+p{
-        font-size: 9rem;
-    }
-    .perso{
-        text-align: center;
-        position: relative;
-    }
-
-
-    .perso a{
-        margin: auto;
-        height: 4rem;
-        width: 10rem;
-        position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
-        border-radius: 4px;
-        padding: 1rem;
-        text-transform: uppercase;
+    /* bouton Ajouter */
+    .description a{
         background-color: var(--main-bg-color);
+        padding: 1.5rem;
+        border-radius: .4rem;
         color: white;
-        text-align: center; 
-    }
-
-    .perso p:last-child{
-        font-weight: lighter;
-        color: #555;
-    }
-    
-
-    .ficheBlog{
-        max-width: 50%;
-        display: inline-block;
+        width: 50%;
         text-align: center;
-        max-height: 30rem;
-        box-shadow: 1px 1px 6px #555;
-        padding-bottom: 3rem;   
-        margin: 2rem; 
-        border-radius: 3px;
+        text-transform: uppercase;
     }
 
-    .ficheBlog img{
-        max-width: 30rem;
+    /* Descendre le texte de la description */
+    .sectionProd article:last-of-type{
+        padding-top : 5rem; 
     }
 
+    /* Pour le coeur */
+    .description img{
+        max-width: 6%;
+    }
+
+    select{
+        font-size: 2rem;
+    }
+/* 
+FIN SECTION PRODUITS 
+*/
+
+
+/* SECTION UTILISATION */
+    /*Fiche conseils */
     .fiche{
         max-width: 90%;
         display: inline-block;
@@ -317,23 +257,87 @@ select{
         margin-top: 2rem; 
         border-radius: 3px;
     }
+/* 
+FIN SECTION UTILISATION 
+*/
 
+
+/* SECTION PERSONNALISATION */
+
+/* FLEX !!!! */
+    .sectionPerso article:last-of-type{
+        display: flex;
+        align-items: center;
+    }
+    
+    /* blocs avec les bouteilles et les prix */
+    .perso{
+        text-align: center;
+        position: relative;
+    }
+
+    /* Boutons ajouter */
+    .perso a{
+        margin: auto;
+        height: 4rem;
+        width: 10rem;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        border-radius: .4rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        background-color: var(--main-bg-color);
+        color: white;
+        text-align: center; 
+    }
+
+    /* Mise en page du prix */
+    .perso p:last-child{
+        font-weight: 100;
+        color: #555;
+    }
+/*
+ FIN SECTION PERSONNALISATION 
+*/
+
+/* SECTION PRODUITS RELATIFS */
+    /* fiche amenant vers le blog */
+    .ficheBlog{
+        max-width: 50%;
+        display: inline-block;
+        text-align: center;
+        max-height: 30rem;
+        box-shadow: 1px 1px 6px #555;
+        padding-bottom: 3rem;   
+        margin: 2rem; 
+        border-radius: 3px;
+    }
+
+    /* Taille max de l'image */
     .ficheBlog img{
         max-width: 30rem;
     }
+/*
+FIN DE SECTION PRODUITS RELATIFS
+*/
 
-    .user{
-        width: 3rem;
-        border-radius: 50%;
-        vertical-align: middle;
-    }
 
-    
-    .jauge div:first-of-type{
-        width: 100%;
-        height: 1rem;
-        background-color: gray;
-        border-radius: 4px;  
+
+
+
+
+.user{
+    width: 3rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+.jauge div:first-of-type{
+    width: 100%;
+    height: 1rem;
+    background-color: gray;
+        border-radius: .4rem;  
         margin: 2rem 2rem 2rem 0 ;
     }
     
@@ -341,7 +345,7 @@ select{
         width: 10%;
         height: 1rem;
         background-color: blue;
-        border-radius: 4px;  
+        border-radius: .4rem;  
         margin: 2rem 2rem 2rem 0 ;
     }
 
