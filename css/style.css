@@ -54,7 +54,7 @@ Reset
     
     nav{
         text-transform: uppercase;
-        border-bottom: 0.1px solid gray;
+        border-bottom: 0.1px solid gainsboro;
         padding: 1rem;
     }
 
@@ -71,17 +71,40 @@ Reset
         display: inline-block;
         padding: 2rem;  
     }
+
     .deuxiemeNav li:first-of-type{
         /* background-color: #FA96BE; */
         font-family: 'Dancing script', sans-serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
         position: absolute;
         left: 10%;
+        bottom: 20%;
     }
     
     .logo{
-        max-width: 40%;
+                max-width: 40%;
     }
+
+    .center{
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--main-bg-color);
+    }
+
+
+    .center:before, .center:after { 
+        content:''; 
+        display:inline-block; 
+        vertical-align: middle; 
+        width: 25%; 
+        height: 1px; 
+        background: #000; }
+    .center:before { margin-right: 3rem }
+    .center:after { margin-left: 3rem }
+    
+      
     
     .premiereNav{
        position: relative;
@@ -172,6 +195,10 @@ select{
         max-width: 3.5rem;
     }
 
+    .iconeF{
+        width: 2rem;
+        vertical-align: middle; 
+    }
     /* header img:first-of-type{
         max-width: 30%;
     } */
@@ -256,6 +283,17 @@ select{
         
     }
 
+    footer article:first-of-type{
+       display: flex;
+       text-align: center;
+       justify-content: space-around;
+    }
+
+   .iconeFoot{
+       width: 20%;
+    color: #898989;
+    font-size: 2rem;
+   }
 
     .itemFooter li{
         padding: 1rem;
