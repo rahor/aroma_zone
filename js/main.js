@@ -1,24 +1,13 @@
-
-let a = document.querySelector('a:nth-of-type(1)');
-
-console.log(a);
-
-// window.onscroll = function() {myFunction()}; 
-let myNav = document.querySelectorAll('nav a');
-console.log(myNav);
-
-let main = document.querySelectorAll('main');
-console.log(main);
-
-for(let items of myNav){
-    console.log(items);}
-
-var sticky = myNav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    myNav.classList.add("sticky")
-  } else {
-    myNav.classList.remove("sticky");
-  }
-}
+window.onscroll = function() {myFunction()};
+      var header = document.querySelector('.deuxiemeNav');
+      console.log(header);
+      
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }

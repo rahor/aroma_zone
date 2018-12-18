@@ -30,8 +30,23 @@ Reset
     body{
         font-family: 'Rubik', sans-serif;
         font-size: 1.5rem;
+        color: rgb(56, 56, 56);
         background-color: white;
         border-bottom: 1rem solid  var(--main-bg-color);
+    }
+    
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    section{
+        padding-top: 2rem; 
+        padding-bottom: 2rem; 
+    }
+    
+    article{
+        margin-top: 1rem;
     }
 /**/
  
@@ -40,63 +55,98 @@ Reset
         color: var(--main-bg-color);
     }
 
-    article{
-        margin-top: 1rem;
-    }
-
+/* HEADER   */
     header{
-        text-align: right;
+        /* text-align: right; */
         padding-top: 2rem;
         box-shadow: 1px 1px 12px #555;    
     }
 
-
     header a{
         text-decoration: none;  
-        color: black;   
+        color: rgb(56, 56, 56);   
         font-size: 1.5rem;  
     }
+
     
+/* Premiere Nav avec le logo */
+    .logo{
+        width: 45rem;
+    }
+
+    .premiereNav{
+        position: relative;
+        text-align: center;
+     }
+
+     
+    .premiereNav li:last-child{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width : 25%;
+    }
+
+    /* Bouton de la nav */
+    .premiereNav a {
+        text-align: center;
+        color:  var(--main-bg-color);
+        padding: 1rem;
+        border: 0.1rem solid  var(--main-bg-color);
+        text-transform: uppercase;
+        border-radius: 3px;
+    }
+    
+    
+/* Navigation menu principal */
     nav{
         text-transform: uppercase;
         border-bottom: 0.1px solid gainsboro;
         padding: 1rem;
     }
+    
+    nav ul li{
+       display: inline-block;
+       padding: 2rem;
+       }
 
-
+/* Menus sticky */
     .sticky {
         position: fixed;
         top: 0;
         width: 100%;
       }
-
-    ul li {
-        display: block;
-    }
     
-    .deuxiemeNav{
+/* Deuxieme navigation propre au produit     */
+     .deuxiemeNav{
         text-align: right;
         padding : 2rem;
         position: relative;
+        background-color: white;
+        
     }
     .deuxiemeNav li {
         display: inline-block;
         padding: 2rem;  
     }
 
+    /* Premier texte du sous menu, situé à gauche */
     .deuxiemeNav li:first-of-type{
-        /* background-color: #FA96BE; */
         font-family: 'Dancing script', sans-serif;
         font-size: 2.5rem;
         position: absolute;
         left: 10%;
         bottom: 20%;
     }
-    
-    .logo{
-                width: 55rem;
-    }
+/*
+FIN HEADER
+*/    
 
+/* SECTION PRODUITS */
+    /* Prix centré et entre 2 traits */
     .center{
         text-align: center;
         padding: 5rem;
@@ -104,7 +154,6 @@ Reset
         font-weight: bold;
         color: var(--main-bg-color);
     }
-
 
     .center:before, .center:after { 
         content:''; 
@@ -123,49 +172,17 @@ Reset
     
       
     
-    .premiereNav{
-       position: relative;
-       text-align: center;
-    }
-
-    .premiereNav li{
-        display: inline-block;
-    }
-
-    .premiereNav li:last-child{
-        /* background-color: blueviolet; */
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width : 25%;
-    }
-
-    .premiereNav a {
-        text-align: center;
-        color:  var(--main-bg-color);
-        padding: 1rem;
-        border: 0.1rem solid  var(--main-bg-color);
-        text-transform: uppercase;
-        border-radius: 3px;
-    }
     
- nav ul li{
-    display: inline-block;
-    padding: 2rem;
-    }
 
 
+/* A CHANGER */
  .description div{
      display: flex;
      justify-content: space-around;
      align-items: center;
-     /* background-color: aliceblue; */
  }
 
-
+/* bouton Ajouter */
  .description a{
      background-color: var(--main-bg-color);
      padding: 1.5rem;
@@ -176,13 +193,11 @@ Reset
      text-transform: uppercase;
  }
 
+ /* Descendre le texte de la description */
  .sectionProd article:last-of-type{
      padding-top : 5rem; 
  }
 
- /* .description p{
-     margin-top: 3rem; 
- } */
 
 select{
     font-size: 2rem;
@@ -194,14 +209,7 @@ select{
 
 
 
-    main {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    section{
-        padding-top: 2rem; 
-        padding-bottom: 2rem; 
-    }
+   
     h1{
         font-family: 'Dancing Script', cursive;
         font-size: 3.5rem;
@@ -210,6 +218,7 @@ select{
 
     p{
         margin-top : 2rem; 
+        /* width: 80%; */
     }
     h2{font-family: 'Rubik', sans-serif;
     }
@@ -236,12 +245,24 @@ select{
         /* margin: auto 0; */
     }
 
+
+    .sectionUtilisation article{
+        width: calc(50% - 2rem);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+
+    /* .sectionUtilisation p{
+        min-height: 13rem;
+    } */
+
     .sectionPerso article:last-of-type{
         display: flex;
         align-items: center;
     }
 
-    .op{
+    .perso+p{
         font-size: 9rem;
     }
     .perso{
@@ -271,13 +292,29 @@ select{
     
 
     .ficheBlog{
-      max-width: 40%;
+        max-width: 50%;
         display: inline-block;
         text-align: center;
         max-height: 30rem;
         box-shadow: 1px 1px 6px #555;
         padding-bottom: 3rem;   
         margin: 2rem; 
+        border-radius: 3px;
+    }
+
+    .ficheBlog img{
+        max-width: 30rem;
+    }
+
+    .fiche{
+        max-width: 90%;
+        display: inline-block;
+        text-align: center;
+        max-height: 40rem;
+        box-shadow: 1px 1px 6px #555;
+        padding-bottom: 3rem;   
+        /* margin: 2rem;  */
+        margin-top: 2rem; 
         border-radius: 3px;
     }
 
@@ -312,15 +349,15 @@ select{
 
 
     .unCommentaire{
-        width: 45%;
+        width: calc(50% - 3rem);
         border-radius: 3px;
         position: relative;
         padding: 2rem;
         display: inline-block;
         box-shadow: 1px 1px 6px #555;
         margin-top: 2rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        /* padding-left: 3rem; */
+        /* padding-right: 3rem; */
         /* margin-right; */
     }
     
@@ -377,6 +414,7 @@ select{
         font-size: 5rem;
         font-family: 'Dancing script', sans-serif;
     }
+
     
     .sectionProd{
         display: flex;
@@ -529,7 +567,7 @@ select{
     
     .iconeFoot{
         display: inline-block;
-        width: 20%;
+        width: calc(25% - 1rem);
      color: #898989;
      position: relative;
      padding: 1rem;
@@ -554,3 +592,24 @@ select{
         max-width: 17rem;
     }
     
+
+
+    .listeIngredients ul:first-child li:before{ 
+        content:''; 
+        display:inline-block; 
+        vertical-align: middle; 
+        width: 2rem; 
+        height: .5rem;
+        border-radius: 1rem;
+        margin-right: 2rem; 
+        background: var(--main-bg-color); }
+
+    .listeIngredients ul:last-child li:before{ 
+        content:''; 
+        display:inline-block; 
+        vertical-align: middle; 
+        width: 2rem; 
+        height: .5rem;
+        border-radius: 1rem;
+        margin-right: 2rem; 
+        background: var(--main-bg-color); }
