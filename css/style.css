@@ -74,6 +74,16 @@ Reset
         color: var(--main-bg-color);
     }
 
+    h5{
+        font-size: 2rem;
+        font-family: 'dancing script', sans-serif;
+    }
+
+    h4{
+        font-size: 5rem;
+        font-family: 'Dancing script', sans-serif;
+    }
+
 /* HEADER   */
     header{
         /* text-align: right; */
@@ -183,6 +193,24 @@ FIN HEADER
     }
 
 
+ /* !!!!!!!!!!!!!!!!!!!    */
+    .sectionProd{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20rem; 
+    }
+
+.sectionProd p:first-of-type{
+    font-weight: bold;
+}
+.sectionProd article{
+    max-width: 50%;
+}
+.sectionProd article:last-of-type{
+    max-width: 45%;
+}
+
+
     /* Prix centré et entre 2 traits */
     .center{
         text-align: center;
@@ -242,6 +270,48 @@ FIN HEADER
 /* 
 FIN SECTION PRODUITS 
 */
+
+
+/* SECTION DESCRIPTION */
+    /* Jauge de composition */
+    .jauge div:first-of-type{
+        width: 100%;
+        height: 1rem;
+        background-color: gray;
+        border-radius: .4rem;  
+        margin: 2rem 2rem 2rem 0 ;
+    }
+
+    .jauge div div:first-of-type{
+        width: 10%;
+        height: 1rem;
+        background-color: blue;
+        border-radius: .4rem;  
+        margin: 2rem 2rem 2rem 0 ;
+    }
+
+    /* liste des ingédients */
+    .listeIngredients ul{
+        display: inline-block;
+        list-style: none;
+        padding-right: 2rem;
+    }
+
+    /* Icones !!!!! */
+    .articleIcones{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 2rem; 
+    }
+
+    .articleIcones div{
+        padding: 2rem;  
+    }
+/*
+FIN SECTION DESCRIPTION 
+ */
 
 
 /* SECTION UTILISATION */
@@ -317,144 +387,8 @@ FIN SECTION UTILISATION
     .ficheBlog img{
         max-width: 30rem;
     }
-/*
-FIN DE SECTION PRODUITS RELATIFS
-*/
 
-
-
-
-
-
-.user{
-    width: 3rem;
-    border-radius: 50%;
-    vertical-align: middle;
-}
-
-
-.jauge div:first-of-type{
-    width: 100%;
-    height: 1rem;
-    background-color: gray;
-        border-radius: .4rem;  
-        margin: 2rem 2rem 2rem 0 ;
-    }
-    
-    .jauge div div:first-of-type{
-        width: 10%;
-        height: 1rem;
-        background-color: blue;
-        border-radius: .4rem;  
-        margin: 2rem 2rem 2rem 0 ;
-    }
-
-    
-
-
-    .unCommentaire{
-        width: calc(50% - 3rem);
-        border-radius: 3px;
-        position: relative;
-        padding: 2rem;
-        display: inline-block;
-        box-shadow: 1px 1px 6px #555;
-        margin-top: 2rem;
-        /* padding-left: 3rem; */
-        /* padding-right: 3rem; */
-        /* margin-right; */
-    }
-    
-    .avis div:first-of-type{
-        margin-right: 5rem;
-    }
-
-    .avis article{
-        position: relative;
-        /* margin: 0 auto; */
-        margin-top: 1rem;
-        margin-bottom: 4rem;  
-    }
-
-    .fas{
-        position: absolute;
-        top: 50%;
-        /* right: 0; */
-    }
-
-    .avis a{
-        position: absolute; 
-        bottom: 2.8rem;
-        right: 2rem;
-        color: var(--main-bg-color);
-    }
-
-    .feuille{
-        position: absolute; 
-        top: 2rem;
-        right: -3rem;
-        color: var(--main-bg-color);
-    }
-
-    .avis a::after{
-        content: "";
-        width: 8rem;
-        height: 1px;
-        display: block;
-        background-color: #FA96BE;
-    }
-
-
-    
-
-
-    h5{
-        font-size: 2rem;
-        font-family: 'dancing script', sans-serif;
-    }
-
-
-    h4{
-        font-size: 5rem;
-        font-family: 'Dancing script', sans-serif;
-    }
-
-    
-    .sectionProd{
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem; 
-    }
-    
-    .sectionProd p:first-of-type{
-        font-weight: bold;
-    }
-    .sectionProd article{
-        max-width: 50%;
-    }
-    .sectionProd article:last-of-type{
-        max-width: 45%;
-    }
-    
-
-
-    /* .sectionProd img{
-        width: 80%;
-    } */
-    .articleIcones{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        text-align: center;
-        margin-top: 2rem; 
-    }
-    
-    .articleIcones div{
-        padding: 2rem;  
-    }
-    
-
-    
+    /* !! */
     .sectionProdRelatifs div{
         display: flex;
         justify-content: space-between;
@@ -464,111 +398,110 @@ FIN DE SECTION PRODUITS RELATIFS
         width: calc(15% - 1rem);
     }
 
-
-
-/*     
-    .produitR{
-        max-width: 100%;
+    /* Centrer le texte des produits */
+    .sectionProdRelatifs article{   
         text-align: center;
-    } */
+    }
+
+
+/*
+FIN DE SECTION PRODUITS RELATIFS
+*/
+
+
+
+
+/* SECTION AVIS */
+    /* Une fiche commentaire */
+    .unCommentaire{
+        width: calc(50% - 3rem);
+        border-radius: 3px;
+        position: relative;
+        padding: 2rem;
+        display: inline-block;
+        box-shadow: 1px 1px 6px #555;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Espace entre les avis */
+    .avis div:first-of-type{
+        margin-right: 5rem;
+    }
+
+    /* Photo utilisateur */
+    .user{
+        width: 3rem;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
     
+    /* Lien voir Plus */
+    .avis a{
+        position: absolute; 
+        bottom: 2.8rem;
+        right: 2rem;
+        color: var(--main-bg-color);
+    }
+        /* Souligné */
+        .avis a::after{
+            content: "";
+            width: 7.5rem;
+            height: 1px;
+            display: block;
+            background-color: #FA96BE;
+        }
 
-    .listeIngredients{
-        display: flex;
-        justify-content: flex-start;
-        /* justify-content: space-around; */
-
+    /* Les feuilles d'avis (notation) */
+    .feuille{
+        position: absolute; 
+        top: 2rem;
+        right: -3rem;
+        color: var(--main-bg-color);
     }
 
-    .listeIngredients ul{
-        padding-right: 2rem;
-    }
-    .sectionProdRelatifs article{
-        
-        text-align: center;
-    }
-
+    /* Laissez votre avis lien */
     .avis span{
         color: var(--main-bg-color);
         font-weight: bold;
     }
 
-    .commentaire{
-        text-align: center; 
-    }
+        /* Centré */
+        .commentaire{
+            text-align: center; 
+        }
+    
+/* A REVOIR !! */
+    .fas{
+                position: absolute;
+                top: 50%;
+                /* right: 0; */
+            }
+/* 
+FIN SECTION AVIS 
+*/
 
-
-    /* FOOTER */
+/* FOOTER */
+/* mise en page du footer */
     footer{
         max-width: 80%;
         margin: 0 auto;
         padding: 2rem;
     }
 
+    footer ul li {
+        text-align: center;
+        display: block;
+    }
+
+    /* Article un avec les icones */
+    /* centrer les éléments du premier article  */
     footer article:first-of-type{
        text-align: center;
        justify-content: space-around;
     }
 
-    
-    
-    /* .iconeFoot img:first-of-type{
-        width: 11rem;
-    } */
-    
-    
-    .itemFooter li{
-        padding: 1rem;
-    }
-    
-    footer ul{
-        position: relative;
-    }
-    
-    footer ul:after {
-        content: url('../img/deco/Groupe\ 24.png');
-        display: inline-block;
-        margin: 1rem auto 0rem;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .foot{ 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-top: 0.1rem solid  var(--main-bg-color);
-        /* padding: 4rem; */
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        padding: 1rem 0 1rem;
-    }
-    
-    
-    
-    .foot img{
-        width: 30%;
-    }
-    
-    footer ul li {
-        list-style: none;
-        text-align: center;
-    }
-    /* max-width
-    #FA96BE
-    #7AF02B
-    #BEFA96
-    */
-    
-    
-    /* 
-    b{ }
-    hhbbgdgdbastart */
-    
-    
-    
-    
+    /* alignement des icones */
     .iconeFoot{
         display: inline-block;
         width: calc(25% - 1rem);
@@ -578,16 +511,16 @@ FIN DE SECTION PRODUITS RELATIFS
         vertical-align: top;
         margin-top: 20rem; 
     }
+
+    /* Mise en forme des icones+ fond    */
     .superpose {
         position: absolute;
         width: 20rem;
         top : -20rem;
         left: 0;
         right: 0;
-        margin: auto
-        
-            }
-
+        margin: auto;
+    }
 
     .iconeFoot img:first-of-type {
         z-index: 10;
@@ -595,9 +528,43 @@ FIN DE SECTION PRODUITS RELATIFS
         padding-top: 6rem;
         max-width: 17rem;
     }
+
+    /* Gestion des espaces entre les li */
+    .itemFooter li{
+        padding: 1rem;
+    }
     
-
-
+    /* 2eme article avec les listes */
+    .foot{ 
+        display: flex;
+        justify-content: space-around;
+        border-top: 0.1rem solid  var(--main-bg-color);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 1rem 0 1rem;
+    }
+    
+    /* Mise en place des ornements apres les liste du footer */
+    footer ul{
+        position: relative;
+    }
+    footer ul:after {
+        content: url('../img/deco/Groupe\ 24.png');
+        display: inline-block;
+        margin: 1rem auto 0rem;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+   /* 
+   FIN FOOTER 
+   */
+    
+    /*
+    #FA96BE
+    #7AF02B
+    #BEFA96
+    hhbbgdgdbastart */
     .listeIngredients ul:first-child li:before{ 
         content:''; 
         display:inline-block; 
