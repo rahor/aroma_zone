@@ -1,7 +1,6 @@
 /* 
 Reset
 */
-
     @import url('./system-font-css.css');
     
     :root {
@@ -27,13 +26,15 @@ Reset
     img{
         max-width: 100%;
     }
+
     body{
         font-family: 'Rubik', sans-serif;
         font-size: 1.5rem;
         background-color: white;
         border-bottom: 1rem solid  var(--main-bg-color);
     }
-    
+/**/
+ 
     h3{
         font-weight: bold;
         color: var(--main-bg-color);
@@ -245,18 +246,30 @@ select{
     }
     .perso{
         text-align: center;
+        position: relative;
     }
 
-    /* .perso p{
-        padding-top: 2rem;
-    } */
+
+    .perso a{
+        margin: auto;
+        height: 4rem;
+        width: 10rem;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        border-radius: 4px;
+        padding: 1rem;
+        text-transform: uppercase;
+        background-color: var(--main-bg-color);
+        color: white;
+        text-align: center; 
+    }
 
     .perso p:last-child{
         font-weight: lighter;
         color: #555;
-
     }
     
+
     .ficheBlog{
       max-width: 40%;
         display: inline-block;
@@ -298,21 +311,28 @@ select{
     
 
 
-    .avis div{
-        width: 40%;
+    .unCommentaire{
+        width: 45%;
         border-radius: 3px;
         position: relative;
         padding: 2rem;
         display: inline-block;
         box-shadow: 1px 1px 6px #555;
         margin-top: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         /* margin-right; */
+    }
+    
+    .avis div:first-of-type{
+        margin-right: 5rem;
     }
 
     .avis article{
         position: relative;
-       width: 90%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-top: 1rem;
+        margin-bottom: 4rem;  
     }
 
     .fas{
@@ -328,6 +348,13 @@ select{
         color: var(--main-bg-color);
     }
 
+    .feuille{
+        position: absolute; 
+        top: 2rem;
+        right: -3rem;
+        color: var(--main-bg-color);
+    }
+
     .avis a::after{
         content: "";
         width: 8rem;
@@ -335,6 +362,9 @@ select{
         display: block;
         background-color: #FA96BE;
     }
+
+
+    
 
 
     h5{
@@ -364,6 +394,8 @@ select{
         max-width: 45%;
     }
     
+
+
     /* .sectionProd img{
         width: 80%;
     } */
@@ -428,23 +460,36 @@ select{
     footer{
         max-width: 80%;
         margin: 0 auto;
-        
+        padding: 2rem;
     }
 
     footer article:first-of-type{
-       display: flex;
        text-align: center;
        justify-content: space-around;
     }
 
-   .iconeFoot{
-       width: 20%;
-    color: #898989;
-    font-size: 2rem;
-   }
-
+    
+    
+    /* .iconeFoot img:first-of-type{
+        width: 11rem;
+    } */
+    
+    
     .itemFooter li{
         padding: 1rem;
+    }
+    
+    footer ul{
+        position: relative;
+    }
+    
+    footer ul:after {
+        content: url('../img/deco/Groupe\ 24.png');
+        display: inline-block;
+        margin: 1rem auto 0rem;
+        position: absolute;
+        text-align: center;
+        width: 100%;
     }
     
     .foot{ 
@@ -452,24 +497,57 @@ select{
         align-items: center;
         justify-content: space-around;
         border-top: 0.1rem solid  var(--main-bg-color);
-        padding: 6rem;
+        /* padding: 4rem; */
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 1rem 0 1rem;
     }
-        
-        .foot img{
-            width: 30%;
-        }
+    
+    
+    
+    .foot img{
+        width: 30%;
+    }
     
     footer ul li {
-    list-style: none;
-    text-align: center;
-        }
-        /* max-width
-        #FA96BE
-        #7AF02B
-        #BEFA96
-        */
+        list-style: none;
+        text-align: center;
+    }
+    /* max-width
+    #FA96BE
+    #7AF02B
+    #BEFA96
+    */
+    
+    
+    /* 
+    b{ }
+    hhbbgdgdbastart */
+    
+    
+    
+    
+    .iconeFoot{
+        display: inline-block;
+        width: 20%;
+     color: #898989;
+     position: relative;
+     padding: 1rem;
+     background-color: #555;    
+    }
+    .superpose {
+        position: absolute;
+        width: 20rem;
+        top : -15rem;
         
-        
-        /* 
-        b{ }
-        hhbbgdgdbastart */
+            }
+
+
+    #img_1 {
+        z-index: 10;
+        padding: 3rem;
+        padding-top: 5rem;
+    }
+    #img_2 {
+        z-index: -1;
+    }
