@@ -39,6 +39,10 @@ Reset
         color: var(--main-bg-color);
     }
 
+    article{
+        margin-top: 1rem;
+    }
+
     header{
         text-align: right;
         padding-top: 2rem;
@@ -89,7 +93,7 @@ Reset
     }
     
     .logo{
-                max-width: 40%;
+                width: 55rem;
     }
 
     .center{
@@ -144,7 +148,7 @@ Reset
         padding: 1rem;
         border: 0.1rem solid  var(--main-bg-color);
         text-transform: uppercase;
-        border-radius: 4%;
+        border-radius: 3px;
     }
     
  nav ul li{
@@ -187,10 +191,7 @@ select{
      max-width: 6%;
  }
 
-    article{
-        padding-bottom: 3rem;
-        /* padding-top: 3rem; */
-    }
+
 
     main {
         max-width: 80%;
@@ -206,11 +207,19 @@ select{
         padding-bottom: 1rem; 
     }
 
+    p{
+        margin-top : 2rem; 
+    }
     h2{font-family: 'Rubik', sans-serif;
-    padding-bottom: 2rem; }
+    }
 
     .icone{
         max-width: 3.5rem;
+    }
+
+    section{
+        padding-top: 4rem; 
+        padding-bottom: 4rem; 
     }
 
     .iconeF{
@@ -247,6 +256,21 @@ select{
         color: #555;
 
     }
+    
+    .ficheBlog{
+      max-width: 40%;
+        display: inline-block;
+        text-align: center;
+        max-height: 30rem;
+        box-shadow: 1px 1px 6px #555;
+        padding-bottom: 3rem;   
+        margin: 2rem; 
+        border-radius: 3px;
+    }
+
+    .ficheBlog img{
+        max-width: 30rem;
+    }
 
     .user{
         width: 3rem;
@@ -254,17 +278,52 @@ select{
         vertical-align: middle;
     }
 
-    .avis article{
+    
+    .jauge div:first-of-type{
+        width: 100%;
+        height: 1rem;
+        background-color: gray;
+        border-radius: 4px;  
+        margin: 2rem 2rem 2rem 0 ;
+    }
+    
+    .jauge div div:first-of-type{
+        width: 10%;
+        height: 1rem;
+        background-color: blue;
+        border-radius: 4px;  
+        margin: 2rem 2rem 2rem 0 ;
+    }
+
+    
+
+
+    .avis div{
         width: 40%;
-        background-color: darkcyan;
-        border-radius: 1%;
+        border-radius: 3px;
         position: relative;
         padding: 2rem;
+        display: inline-block;
+        box-shadow: 1px 1px 6px #555;
+        margin-top: 2rem;
+        /* margin-right; */
+    }
+
+    .avis article{
+        position: relative;
+       width: 90%;
+        margin: 0 auto;
+    }
+
+    .fas{
+        position: absolute;
+        top: 50%;
+        /* right: 0; */
     }
 
     .avis a{
         position: absolute; 
-        bottom: 2rem;
+        bottom: 2.8rem;
         right: 2rem;
         color: var(--main-bg-color);
     }
@@ -276,6 +335,7 @@ select{
         display: block;
         background-color: #FA96BE;
     }
+
 
     h5{
         font-size: 2rem;
@@ -319,10 +379,7 @@ select{
         padding: 2rem;  
     }
     
-    
-    .sectionUtilisation div{
-        display: flex;
-    }
+
     
     .sectionProdRelatifs div{
         display: flex;

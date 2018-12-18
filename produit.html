@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Produits</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Rubik" rel="stylesheet">
     <script src="./js/main.js"></script>
@@ -12,7 +15,7 @@
 <body>
 
     <header>
-        <ul class="premiereNav"><li><img src="./img/svg/logo-aroma-zone.svg" alt="logo_Aroma_zone" class="logo"></li>
+        <ul class="premiereNav"><li><img src="./img/svg/logo-aroma-zone.svg " alt="logo_Aroma_zone" class="logo"></li>
         <!-- Premiere nav -->
             <li><img src="./img/svg/user.svg" alt="compte" class="icone"><img src="./img/svg/shop.svg" alt="panier"class="icone"><a>Trouver une boutique</a></li>
         </ul>
@@ -31,7 +34,7 @@
                 <li><a href="#Utilisation">Utilisation</a></li>
                 <li><a href="#Personnalisation">Personnalisation</a></li>
                 <li><a href="#Avis">Avis</a></li>
-                <li><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"></li>
+                <li><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/leave.svg" class="iconeF"></li>
                 <!-- <li><a href="#share"><img src="./img/svg/share.svg" alt="partager" class="iconeF"></a></li> -->
             </ul>
     </header>
@@ -63,9 +66,11 @@
     <section>
         <h1>Description et composition</h1>
         <!-- Jauge -->
-        <article>
+        <article class="jauge">
             <p>Nous ne vous cachons rien..</p>
             <p>Notre huile de soins Lavande BIO est composée de...</p>
+
+            <div><div></div></div>
            
            <div class="listeIngredients"><ul>
                 <li>10 % d'huile d'Amla, </li>
@@ -109,14 +114,14 @@
         <article>
             <h2>Comment utiliser mon huile ?</h2>
             <p>Cette huile s'utilise pure et personnalisée. Pour savoir comment appliquer votre huile en détails nous vous invitons à aller voir notre super tutoriel. </p>
-            <div class="ficheBlog"><img alt="image"><p>Comment utiliser mon huile ?</p></div>
+            <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>Comment utiliser mon huile ?</p></div>
         </article>
 
         <!-- conserver mon huile -->
         <article>
                 <h2>Comment conserver mon huile ?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et lorem</p>
-                <div class="ficheBlog"><img alt="image"><p>Comment conserver mon huile ?</p></div>
+                <div class="ficheBlog"><img src="./img/ambiance/huilecoco.jpg" alt="image"><p>Comment conserver mon huile ?</p></div>
         </article>
     </section>
 
@@ -162,28 +167,28 @@
 
     </section>
 
-    <section class="blog">
+    <section class="sectionBlog">
         <p>Pour plus de détails vous pouvez consulter</p>
-        <article>
-                <div class="ficheBlog"><img src="./img/ambiance/détente.jpg" alt="image"><p>La recette du mois</p></div>
-        </article>
-        <article>
-                <div class="ficheBlog"><img src="./img/ambiance/pierre.jpg" alt="image"><p>Comment choisir ses huiles ?</p></div>
-        </article>
-        <article>
-                <div class="ficheBlog"><img alt="image"><p>Adopter la zen attitude</p></div>
+        <article class="blog">
+                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>La recette du mois</p></div>
+   
+                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-5.jpg" alt="image"><p>Comment choisir ses huiles ?</p></div>
+      
+                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-6.jpg" alt="image"><p>Adopter la zen attitude</p></div>
         </article>
 
     </section>  
 
     <!-- Avis -->
     <section class="avis">
-        <h1>Avis</h1>
+        <h1>Avis <img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/leave.svg" class="iconeF"></h1>
         <p>Personne ne peut en parler mieux que vous...</p>
-
-        <article class="unCommentaire"><h5>"Super"</h5><p>Lorem ipsum dolor sit, amet consecte</p><p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p></article>
-        <article class="unCommentaire"><h5>"Super"</h5><p>Lorem ipsum dolor sit, amet consecte</p><p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p></article>
-
+        
+        <article>
+            <i class="fas fa-chevron-left"></i>
+        <div class="unCommentaire"><h5>"Super"</h5><p>Lorem ipsum dolor sit, amet consecte</p><p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p></div>
+        <div class="unCommentaire"><h5>"Super"</h5><p>Lorem ipsum dolor sit, amet consecte</p><p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p></div>
+        <i class="fas fa-chevron-right"></i></article>
         <p class="commentaire">Vous avez acheté ce produit ? Laissez <span>votre avis</span></p>
     </section>
 
