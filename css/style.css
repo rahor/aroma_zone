@@ -533,21 +533,24 @@ select{
      color: #898989;
      position: relative;
      padding: 1rem;
-     background-color: #555;    
+        vertical-align: top;
+        margin-top: 20rem; 
     }
     .superpose {
         position: absolute;
         width: 20rem;
-        top : -15rem;
+        top : -20rem;
+        left: 0;
+        right: 0;
+        margin: auto
         
             }
 
 
-    #img_1 {
+    .iconeFoot img:first-of-type {
         z-index: 10;
         padding: 3rem;
-        padding-top: 5rem;
+        padding-top: 6rem;
+        max-width: 17rem;
     }
-    #img_2 {
-        z-index: -1;
-    }
+    
