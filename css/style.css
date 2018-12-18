@@ -108,8 +108,13 @@ Reset
         width: 25%; 
         height: 1px; 
         background: #000; }
-    .center:before { margin-right: 3rem }
-    .center:after { margin-left: 3rem }
+
+    .center:before { 
+        margin-right: 3rem 
+    }
+    .center:after { 
+        margin-left: 3rem 
+    }
     
       
     
@@ -166,9 +171,13 @@ Reset
      text-transform: uppercase;
  }
 
- .description p{
-     margin-top: 3rem; 
+ .sectionProd article:last-of-type{
+     padding-top : 5rem; 
  }
+
+ /* .description p{
+     margin-top: 3rem; 
+ } */
 
 select{
     font-size: 2rem;
@@ -180,7 +189,7 @@ select{
 
     article{
         padding-bottom: 3rem;
-        padding-top: 3rem;
+        /* padding-top: 3rem; */
     }
 
     main {
@@ -193,10 +202,12 @@ select{
     }
     h1{
         font-family: 'Dancing Script', cursive;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        padding-bottom: 1rem; 
     }
 
-    h2{font-family: 'Rubik', sans-serif;}
+    h2{font-family: 'Rubik', sans-serif;
+    padding-bottom: 2rem; }
 
     .icone{
         max-width: 3.5rem;
@@ -227,9 +238,9 @@ select{
         text-align: center;
     }
 
-    .perso p{
+    /* .perso p{
         padding-top: 2rem;
-    }
+    } */
 
     .perso p:last-child{
         font-weight: lighter;
@@ -237,6 +248,39 @@ select{
 
     }
 
+    .user{
+        width: 3rem;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .avis article{
+        width: 40%;
+        background-color: darkcyan;
+        border-radius: 1%;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .avis a{
+        position: absolute; 
+        bottom: 2rem;
+        right: 2rem;
+        color: var(--main-bg-color);
+    }
+
+    .avis a::after{
+        content: "";
+        width: 8rem;
+        height: 1px;
+        display: block;
+        background-color: #FA96BE;
+    }
+
+    h5{
+        font-size: 2rem;
+        font-family: 'dancing script', sans-serif;
+    }
 
 
     h4{
@@ -247,7 +291,7 @@ select{
     .sectionProd{
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
+        margin-top: 2rem; 
     }
     
     .sectionProd p:first-of-type{
@@ -268,6 +312,7 @@ select{
         flex-wrap: wrap;
         flex-direction: row;
         text-align: center;
+        margin-top: 2rem; 
     }
     
     .articleIcones div{
