@@ -109,32 +109,27 @@ Reset
         width: 45rem;
     }
 
-    .premiereNav{
+    header > ul{
         position: relative;
         text-align: center;
      }
-
      
-    .premiereNav li:last-child{
+    .premiereNav li:last-of-type{
         position: absolute;
         top: 0;
         right: 0;
         width : 30%;
-    }
-
-    .premiereNav li{
         display: inline-block;
-        vertical-align: bottom; 
     }
 
-    .premiereNav li *{
+    header ul:first-of-type li *{
         display: inline-block;
         vertical-align: middle;
         margin: 1rem;
     }
 
     /* Bouton de la nav */
-    .premiereNav a {
+   .premiereNav a {
         text-align: center;
         color:  var(--main-color);
         padding: 1rem;
@@ -167,21 +162,21 @@ Reset
         top: 0;
         width: 100%;
       }
-      
-    .deuxiemeNav{
+
+    header ul:nth-of-type(2){
        text-align: right;
        padding : 2rem;
        position: relative;
        background-color: white;  
        }
     
-    .deuxiemeNav li {
+    header ul:nth-of-type(2) li {
        display: inline-block;
        padding: 2rem;  
     }
 
     /* Premier texte du sous menu, situé à gauche */
-    .deuxiemeNav li:first-of-type{
+    header ul:nth-of-type(2) li:first-of-type{
         font-family: 'Dancing script', sans-serif;
         font-size: 2.5rem;
         position: absolute;
@@ -240,14 +235,14 @@ FIN HEADER
     }
     
     /* Partie de droite */
-    .description div{
+    .sectionProd article:nth-of-type(2) div{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
     /* bouton Ajouter */
-    .description a{
+    .sectionProd article:nth-of-type(2) a{
         background-color: var(--main-color);
         padding: 1.5rem;
         border-radius: .4rem;
@@ -259,7 +254,7 @@ FIN HEADER
     }
 
     /* Pour le coeur */
-    .description img{
+    .sectionProd article:nth-of-type(2) img{
         max-width: 6%;
     }
 
@@ -490,7 +485,7 @@ FIN DE SECTION PRODUITS RELATIFS
 
 /* SECTION AVIS */
     /* Une fiche commentaire */
-    .unCommentaire{
+    .avis article > div {
         width: calc(50% - 3rem);
         border-radius: .3rem;
         -webkit-border-radius : .3rem;
@@ -545,27 +540,25 @@ FIN DE SECTION PRODUITS RELATIFS
         font-weight: bold;
     }
 
-        /* Centré */
-        .commentaire{
-            text-align: center; 
+        /* Centré */    
+        .avis article ~ p{
+            text-align: center;
         }
-    
     .avis article{
         position: relative;
     }
 
-/* A REVOIR !! */
-.fa-chevron-right{
-                position: absolute;
-                top: 50%;
-                right: -3rem;
-            }
-.fa-chevron-left{
-                position: absolute;
-                top: 50%;
-                left: -3rem;
-            }
-
+/* Chevrons gauche, droite */
+    .fa-chevron-right{
+        position: absolute;
+        top: 50%;
+        right: -3rem;
+    }
+    .fa-chevron-left{
+        position: absolute;
+        top: 50%;
+        left: -3rem;
+    }
 
 /* 
 FIN SECTION AVIS 
@@ -591,19 +584,20 @@ FIN SECTION AVIS
        justify-content: space-around;
     }
 
+    
     /* alignement des icones */
-    .iconeFoot{
+    footer article:first-of-type div{
         display: inline-block;
         width: calc(25% - 1rem);
-     color: #898989;
-     position: relative;
-     padding: 1rem;
+        color: #898989;
+        position: relative;
+        padding: 1rem;
         vertical-align: top;
         margin-top: 20rem; 
     }
 
     /* Mise en forme des icones+ fond    */
-    .superpose {
+    footer article:first-of-type img {
         position: absolute;
         width: 20rem;
         top : -20rem;
@@ -612,20 +606,15 @@ FIN SECTION AVIS
         margin: auto;
     }
 
-    .iconeFoot img:first-of-type {
+    footer article:first-of-type div img:first-of-type {
         z-index: 10;
         padding: 3rem;
         padding-top: 6rem;
         max-width: 17rem;
     }
-
-    /* Gestion des espaces entre les li */
-    .itemFooter li{
-        padding: 1rem;
-    }
     
     /* 2eme article avec les listes */
-    .foot{ 
+    footer article:nth-of-type(2){ 
         justify-content: space-around;
         border-top: 0.1rem solid  var(--main-color);
         margin-top: 4rem;
@@ -666,24 +655,3 @@ FIN SECTION AVIS
     #7AF02B
     #BEFA96
     hhbbgdgdbastart */
-    .listeIngredients ul:first-child li:before{ 
-        content:''; 
-        display:inline-block; 
-        vertical-align: middle; 
-        width: 2rem; 
-        height: .5rem;
-        border-radius: 1rem;
-        -webkit-border-radius : 1rem;
-        margin-right: 2rem; 
-        background: var(--main-color); }
-
-    .listeIngredients ul:last-child li:before{ 
-        content:''; 
-        display:inline-block; 
-        vertical-align: middle; 
-        width: 2rem; 
-        height: .5rem;
-        border-radius: 1rem;
-        -webkit-border-radius : 1rem;
-        margin-right: 2rem; 
-        background: var(--main-color); }
