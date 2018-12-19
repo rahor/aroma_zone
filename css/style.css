@@ -1,10 +1,17 @@
 /* 
 Reset
-*/
-    @import url('./system-font-css.css');
-    
+*/  
     :root {
-        --main-bg-color:   #FA96BE;
+        --main-color:   #FA96BE;
+        --color1 : #A396FA ;
+        --color2 : #96EDFA;
+        --color3 : #96FAAD;
+        --color4 : #E5F676;
+        --color5 : #FA96BE;
+        --color6 : #E99954;
+        --color7 : #F67676;
+        --color8 : #DF4343;
+
       }
 
     *{
@@ -32,7 +39,7 @@ Reset
         font-size: 1.5rem;
         color: rgb(56, 56, 56);
         background-color: white;
-        border-bottom: 1rem solid  var(--main-bg-color);
+        border-bottom: 1rem solid  var(--main-color);
     }
     
     main {
@@ -71,7 +78,7 @@ Reset
  
     h3{
         font-weight: bold;
-        color: var(--main-bg-color);
+        color: var(--main-color);
     }
 
     h5{
@@ -122,11 +129,12 @@ Reset
     /* Bouton de la nav */
     .premiereNav a {
         text-align: center;
-        color:  var(--main-bg-color);
+        color:  var(--main-color);
         padding: 1rem;
-        border: 0.1rem solid  var(--main-bg-color);
+        border: 0.1rem solid  var(--main-color);
         text-transform: uppercase;
-        border-radius: 3px;
+        border-radius: .3rem;
+        -webkit-border-radius : .3rem;
     }
     
     
@@ -175,7 +183,7 @@ Reset
     }
 
     /* Icones de feuilles de la nav*/
-    .iconeF{
+    .iconeFeuille{
         width: 2rem;
         vertical-align: middle; 
     }
@@ -184,31 +192,20 @@ FIN HEADER
 */    
 
 /* SECTION PRODUITS */
+    .sectionProd p:first-of-type{
+        font-weight: bold;
+    }
 
-    /* Mise en ligne des 2 articles, le produit et la description */
-    .sectionUtilisation article{
-        width: calc(50% - 2rem);
+    /* Mise en ligne du produit et de sa decription */
+    .sectionProd article{
+        max-width: calc(50% - 1rem);
         display: inline-block;
         vertical-align: top;
     }
-
-
- /* !!!!!!!!!!!!!!!!!!!    */
-    .sectionProd{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20rem; 
+    .sectionProd article:last-of-type{
+        padding-top: 5rem;
+        
     }
-
-.sectionProd p:first-of-type{
-    font-weight: bold;
-}
-.sectionProd article{
-    max-width: 50%;
-}
-.sectionProd article:last-of-type{
-    max-width: 45%;
-}
 
 
     /* Prix centré et entre 2 traits */
@@ -217,7 +214,7 @@ FIN HEADER
         padding: 5rem;
         font-size: 2rem;
         font-weight: bold;
-        color: var(--main-bg-color);
+        color: var(--main-color);
     }
 
     .center:before, .center:after { 
@@ -245,18 +242,14 @@ FIN HEADER
 
     /* bouton Ajouter */
     .description a{
-        background-color: var(--main-bg-color);
+        background-color: var(--main-color);
         padding: 1.5rem;
         border-radius: .4rem;
+        -webkit-border-radius : .4rem;
         color: white;
         width: 50%;
         text-align: center;
         text-transform: uppercase;
-    }
-
-    /* Descendre le texte de la description */
-    .sectionProd article:last-of-type{
-        padding-top : 5rem; 
     }
 
     /* Pour le coeur */
@@ -273,40 +266,115 @@ FIN SECTION PRODUITS
 
 
 /* SECTION DESCRIPTION */
-    /* Jauge de composition */
-    .jauge div:first-of-type{
-        width: 100%;
-        height: 1rem;
-        background-color: gray;
-        border-radius: .4rem;  
-        margin: 2rem 2rem 2rem 0 ;
-    }
+   
+span{
+    display: inline-block;
+}
 
-    .jauge div div:first-of-type{
+
+/* Jauge de composition */
+    .sectionDescription span{
+    border-radius: .8rem;
+    -webkit-border-radius : .8rem;
+    padding: .2rem;
+    }
+    .sectionDescription span:nth-of-type(1){
+        background-color: var(--color1);
         width: 10%;
-        height: 1rem;
-        background-color: blue;
-        border-radius: .4rem;  
-        margin: 2rem 2rem 2rem 0 ;
+    }
+    .sectionDescription span:nth-of-type(2){
+        background-color: var(--color2);
+        width: 15%;
+    }
+    .sectionDescription span:nth-of-type(3){
+        background-color: var(--color3);
+        width: 25%;
+    }
+    .sectionDescription span:nth-of-type(4){
+        background-color: var(--color4);
+        width: 15%;
+    }
+    .sectionDescription span:nth-of-type(5){
+        background-color: var(--color5);
+        width: 10%;
+    }
+    .sectionDescription span:nth-of-type(6){
+        background-color: var(--color6);
+        width: 10%;
+    }
+    .sectionDescription span:nth-of-type(7){
+        background-color: var(--color7);
+        width: 8%;
+    }
+    .sectionDescription span:nth-of-type(8){
+        background-color: var(--color8);
+        width: 4%;
     }
 
+    /* Jauge entiere */
+    .sectionDescription ul:first-of-type li{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .sectionDescription ul:first-of-type li{
+        display: inline-block;
+    }
+    .sectionDescription ul:not(:first-of-type) li{
+        position: relative; 
+    }
+
+    
     /* liste des ingédients */
-    .listeIngredients ul{
+    .sectionDescription ul:not(:first-of-type){
         display: inline-block;
         list-style: none;
-        padding-right: 2rem;
+        padding:3rem 3rem 3rem 5rem;
     }
 
-    /* Icones !!!!! */
-    .articleIcones{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    .sectionDescription ul:not(:first-of-type) li:before{
+        content: '';
+        position: absolute;
+        height: .5rem;
+        background-color: blue;
+        width: 2rem;
+        display: block;
+        top: 30%;
+        left: -4rem; 
+        -webkit-border-radius :.4rem;
+        border-radius: .4rem;  
+    }
+
+    .sectionDescription ul:nth-of-type(2) li:nth-of-type(1):before{
+        background-color: var(--color1);
+    }
+    .sectionDescription ul:nth-of-type(2) li:nth-of-type(2):before{
+        background-color: var(--color2);
+    }
+    .sectionDescription ul:nth-of-type(2) li:nth-of-type(3):before{
+        background-color: var(--color3);
+    }
+    .sectionDescription ul:nth-of-type(2) li:nth-of-type(4):before{
+        background-color: var(--color4);
+    
+    }
+    .sectionDescription ul:nth-of-type(3) li:nth-of-type(1):before{
+        background-color: var(--color5);
+    }
+    .sectionDescription ul:nth-of-type(3) li:nth-of-type(2):before{
+        background-color: var(--color6);
+    }
+    .sectionDescription ul:nth-of-type(3) li:nth-of-type(3):before{
+        background-color: var(--color7);
+    }
+    .sectionDescription ul:nth-of-type(3) li:nth-of-type(4):before{
+        background-color: var(--color8);
+    }
+
+
+    /* Icones */
+    .sectionDescription article:last-of-type div{
+        display: inline-block;
         text-align: center;
-        margin-top: 2rem; 
-    }
-
-    .articleIcones div{
         padding: 2rem;  
     }
 /*
@@ -315,17 +383,25 @@ FIN SECTION DESCRIPTION
 
 
 /* SECTION UTILISATION */
-    /*Fiche conseils */
-    .fiche{
+    /* Fiche conseils */
+    .sectionUtilisation div{
         max-width: 90%;
         display: inline-block;
         text-align: center;
         max-height: 40rem;
         box-shadow: 1px 1px 6px #555;
-        padding-bottom: 3rem;   
-        /* margin: 2rem;  */
+        padding-bottom: 3rem; 
         margin-top: 2rem; 
-        border-radius: 3px;
+        border-radius: .3rem;
+        -webkit-border-radius : .3rem;
+    }
+
+
+    /* Mise en ligne des 2 fiches, */
+    .sectionUtilisation article{
+        width: calc(50% - 2rem);
+        display: inline-block;
+        vertical-align: top;
     }
 /* 
 FIN SECTION UTILISATION 
@@ -341,28 +417,29 @@ FIN SECTION UTILISATION
     }
     
     /* blocs avec les bouteilles et les prix */
-    .perso{
+    .sectionPerso div{
         text-align: center;
         position: relative;
     }
 
     /* Boutons ajouter */
-    .perso a{
+    .sectionPerso a{
         margin: auto;
         height: 4rem;
         width: 10rem;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
         border-radius: .4rem;
+        -webkit-border-radius : .4rem;
         padding: 1rem;
         text-transform: uppercase;
-        background-color: var(--main-bg-color);
+        background-color: var(--main-color);
         color: white;
         text-align: center; 
     }
 
     /* Mise en page du prix */
-    .perso p:last-child{
+    .sectionPerso p:last-child{
         font-weight: 100;
         color: #555;
     }
@@ -372,7 +449,7 @@ FIN SECTION UTILISATION
 
 /* SECTION PRODUITS RELATIFS */
     /* fiche amenant vers le blog */
-    .ficheBlog{
+    .sectionBlog article div{
         max-width: 50%;
         display: inline-block;
         text-align: center;
@@ -380,22 +457,19 @@ FIN SECTION UTILISATION
         box-shadow: 1px 1px 6px #555;
         padding-bottom: 3rem;   
         margin: 2rem; 
-        border-radius: 3px;
+        border-radius: .3rem;
+        -webkit-border-radius : .3rem;
     }
 
     /* Taille max de l'image */
-    .ficheBlog img{
+    .sectionBlog article div img{
         max-width: 30rem;
-    }
-
-    /* !! */
-    .sectionProdRelatifs div{
-        display: flex;
-        justify-content: space-between;
     }
     
     .sectionProdRelatifs div article{
-        width: calc(15% - 1rem);
+        width: calc(20% - 1rem);
+        display: inline-block;
+        vertical-align: top;
     }
 
     /* Centrer le texte des produits */
@@ -408,14 +482,12 @@ FIN SECTION UTILISATION
 FIN DE SECTION PRODUITS RELATIFS
 */
 
-
-
-
 /* SECTION AVIS */
     /* Une fiche commentaire */
     .unCommentaire{
         width: calc(50% - 3rem);
-        border-radius: 3px;
+        border-radius: .3rem;
+        -webkit-border-radius : .3rem;
         position: relative;
         padding: 2rem;
         display: inline-block;
@@ -433,6 +505,7 @@ FIN DE SECTION PRODUITS RELATIFS
     .user{
         width: 3rem;
         border-radius: 50%;
+        -webkit-border-radius : 50%;
         vertical-align: middle;
     }
     
@@ -441,7 +514,7 @@ FIN DE SECTION PRODUITS RELATIFS
         position: absolute; 
         bottom: 2.8rem;
         right: 2rem;
-        color: var(--main-bg-color);
+        color: var(--main-color);
     }
         /* Souligné */
         .avis a::after{
@@ -457,12 +530,12 @@ FIN DE SECTION PRODUITS RELATIFS
         position: absolute; 
         top: 2rem;
         right: -3rem;
-        color: var(--main-bg-color);
+        color: var(--main-color);
     }
 
     /* Laissez votre avis lien */
     .avis span{
-        color: var(--main-bg-color);
+        color: var(--main-color);
         font-weight: bold;
     }
 
@@ -471,12 +544,23 @@ FIN DE SECTION PRODUITS RELATIFS
             text-align: center; 
         }
     
+    .avis article{
+        position: relative;
+    }
+
 /* A REVOIR !! */
-    .fas{
+.fa-chevron-right{
                 position: absolute;
                 top: 50%;
-                /* right: 0; */
+                right: -3rem;
             }
+.fa-chevron-left{
+                position: absolute;
+                top: 50%;
+                left: -3rem;
+            }
+
+
 /* 
 FIN SECTION AVIS 
 */
@@ -538,7 +622,7 @@ FIN SECTION AVIS
     .foot{ 
         display: flex;
         justify-content: space-around;
-        border-top: 0.1rem solid  var(--main-bg-color);
+        border-top: 0.1rem solid  var(--main-color);
         margin-top: 4rem;
         margin-bottom: 4rem;
         padding: 1rem 0 1rem;
@@ -572,8 +656,9 @@ FIN SECTION AVIS
         width: 2rem; 
         height: .5rem;
         border-radius: 1rem;
+        -webkit-border-radius : 1rem;
         margin-right: 2rem; 
-        background: var(--main-bg-color); }
+        background: var(--main-color); }
 
     .listeIngredients ul:last-child li:before{ 
         content:''; 
@@ -582,5 +667,6 @@ FIN SECTION AVIS
         width: 2rem; 
         height: .5rem;
         border-radius: 1rem;
+        -webkit-border-radius : 1rem;
         margin-right: 2rem; 
-        background: var(--main-bg-color); }
+        background: var(--main-color); }

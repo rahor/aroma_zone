@@ -32,12 +32,12 @@
                 <li><a href="#Utilisation">Utilisation</a></li>
                 <li><a href="#Personnalisation">Personnalisation</a></li>
                 <li><a href="#Avis">Avis</a></li>
-                <li><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/leave.svg" class="iconeF"></li>
-                <!-- <li><a href="#share"><img src="./img/svg/share.svg" alt="partager" class="iconeF"></a></li> -->
+                <li><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/leave.svg" class="iconeFeuille"></li>
+                <!-- <li><a href="#share"><img src="./img/svg/share.svg" alt="partager" class="iconeFeuille"></a></li> -->
             </ul>
     </header>
 
-    <main class="produitPage">
+    <main>
     <!-- Section produit -->
     <section class="sectionProd">
         <!-- Photo produit -->
@@ -61,33 +61,44 @@
     </section>
 
     <!-- Description et compo -->
-    <section>
+    <section class="sectionDescription">
         <h1>Description et composition</h1>
         <!-- Jauge -->
-        <article class="jauge">
+        <article>
             <p>Nous ne vous cachons rien..</p>
             <p>Notre huile de soins Lavande BIO est composée de...</p>
 
-            <div><div></div></div>
+            <ul><li>
+                    <span>
+                        Alma</span><span>
+                        Rinci</span><span>
+                        Coco</span><span>
+                        Moutarde</span><span>
+                        Brocolis</span><span>
+                        Avocat</span><span>
+                        Jojoba</span><span>
+                        Olive</span>
+                </li>
+            </ul>
            
-           <div class="listeIngredients"><ul>
+          <ul>
                 <li>10% d'huile d'Amla, </li>
                 <li>15% d'huile de Ricin, </li>
                 <li>25% d'huile de Coco, </li>
                 <li>15% d'huile de Moutarde, </li>
-                    </ul>
+            </ul>
 
             <ul>
                 <li>10 % d'huile de Brocolis,</li>
                 <li>10% d'huile d'Avocat,</li>
                 <li>8% d'huile d'Jojoba,</li>
                 <li>7% d'huile d'Olive,</li>
-            </ul>        </div>
+            </ul>
         </article>
         
-        <!-- iconeFs -->
+        <!-- iconeFeuilles -->
         <p>Mais aussi...</p>
-        <article class="articleIcones">
+        <article>
             <div>
                 <img src="./img/svg/coeur.svg" alt="icone_coeur" class="icone">
                 <p>Faite avec amour</p>
@@ -112,14 +123,14 @@
         <article>
             <h2>Comment utiliser mon huile ?</h2>
             <p>Cette huile s'utilise pure et personnalisée. Pour savoir comment appliquer votre huile en détails nous vous invitons à aller voir notre super tutoriel. </p>
-            <div class="fiche"><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>Comment utiliser mon huile ?</p></div>
+            <div><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>Comment utiliser mon huile ?</p></div>
         </article>
 
         <!-- conserver mon huile -->
         <article>
                 <h2>Comment conserver mon huile ?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ex quidem totam culpa doloremque dolores accusamus, laudantium magnam numquam fugiat dolorum quia. Incidunt veniam consectetur eaque, labore error fugiat amet.</p>
-                <div class="fiche"><img src="./img/ambiance/huile-AZ-6.jpg" alt="image"><p>Comment conserver mon huile ?</p></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus </p>
+                <div><img src="./img/ambiance/huile-AZ-6.jpg" alt="image"><p>Comment conserver mon huile ?</p></div>
         </article>
     </section>
 
@@ -127,13 +138,42 @@
     <section class="sectionPerso">
         <h1>Personnalisation</h1>
         <article>Il est possible de personnaliser vos huiles.   Essayez c'est facile en 3 minutes seulement !</article>
-        <article><div class="perso"><h4>1</h4><p>Mon huile de base</p><img src="./img/pack shot/Sans titre-1.png" alt="produit"><p>20,50€</p></div>
+        <article>
+            <div>
+                <h4>1</h4>
+                <p>Mon huile de base</p>
+                <img src="./img/pack shot/Sans titre-1.png" alt="produit">
+                <p>20,50€</p>
+            </div>
+
             <p>+</p>
-        <div class="perso"><h4>2</h4><p>J'ajoute des huiles</p><img src="./img/pack shot/a.png" alt="produit"><a>Ajouter</a><p>...€</p></div>
-        <p>+</p>
-        <div class="perso"><h4>3</h4><p>J'ajoute des huiles</p><img src="./img/pack shot/a.png" alt="produit"><a>Ajouter</a><p>...€</p></div>
-        <p>=</p>
-        <div class="perso"><h4>4</h4><p>J'obtiens mon huile personnalisée !</p><img src="./img/pack shot/a.png" alt="produit"><p>...€</p></div>
+
+            <div>
+                <h4>2</h4>
+                <p>J'ajoute des huiles</p>
+                <img src="./img/pack shot/a.png" alt="produit">
+                <a>Ajouter</a>
+                <p>...€</p>
+            </div>
+            
+            <p>+</p>
+
+            <div>
+                <h4>3</h4>
+                <p>J'ajoute des huiles</p>
+                <img src="./img/pack shot/a.png" alt="produit">
+                <a>Ajouter</a>
+                <p>...€</p>
+            </div>
+        
+            <p>=</p>
+
+            <div>
+                <h4>4</h4>
+                <p>J'obtiens mon huile personnalisée !</p>
+                <img src="./img/pack shot/a.png" alt="produit">
+                <p>...€</p>
+            </div>
         </article>
     </section>
 
@@ -142,23 +182,23 @@
         <h1>Produits relatifs</h1>
         <p>Avec votre produit nous vous conseillons également ces articles.</p>
         <div>
-        <article><img src="./img/pack shot/bet.png" alt="betterave" class="produitR"><p>Huile de betterave
+        <article><img src="./img/pack shot/bet.png" alt="betterave"><p>Huile de betterave
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/pack shot/avocaaa.png" alt="avocat" class="produitR"><p>Huile d'avocat
+        <article><img src="./img/pack shot/avocaaa.png" alt="avocat"><p>Huile d'avocat
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/pack shot/rais.png" alt="raisin" class="produitR"><p>Huile de raisin
+        <article><img src="./img/pack shot/rais.png" alt="raisin"><p>Huile de raisin
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/pack shot/prun.png" alt="prune" class="produitR"><p>Huile de prune
+        <article><img src="./img/pack shot/prun.png" alt="prune"><p>Huile de prune
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/pack shot/tap.png" alt="babassu" class="produitR"><p>Huile de babassu
+        <article><img src="./img/pack shot/tap.png" alt="babassu"><p>Huile de babassu
             </p>
             <p>20,50€</p>
         </article></div>
@@ -167,19 +207,19 @@
 
     <section class="sectionBlog">
         <p>Pour plus de détails vous pouvez consulter</p>
-        <article class="blog">
-                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>La recette du mois</p></div>
+        <article>
+                <div><img src="./img/ambiance/huile-AZ-3.jpg" alt="image"><p>La recette du mois</p></div>
    
-                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-5.jpg" alt="image"><p>Comment choisir ses huiles ?</p></div>
+                <div><img src="./img/ambiance/huile-AZ-5.jpg" alt="image"><p>Comment choisir ses huiles ?</p></div>
       
-                <div class="ficheBlog"><img src="./img/ambiance/huile-AZ-6.jpg" alt="image"><p>Adopter la zen attitude</p></div>
+                <div><img src="./img/ambiance/huile-AZ-6.jpg" alt="image"><p>Adopter la zen attitude</p></div>
         </article>
 
     </section>  
 
     <!-- Avis -->
     <section class="avis">
-        <h1>Avis <img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/feuille.svg" class="iconeF"><img src="./img/svg/leave.svg" class="iconeF"></h1>
+        <h1>Avis <img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/leave.svg" class="iconeFeuille"></h1>
         <p>Personne ne peut en parler mieux que vous...</p>
         
         <article>
@@ -187,11 +227,11 @@
         <div class="unCommentaire">
             <h5>"Super"</h5>
             <div class="feuille">
-                <img src="./img/svg/feuille.svg" class="iconeF">
-                <img src="./img/svg/feuille.svg" class="iconeF">
-                <img src="./img/svg/feuille.svg" class="iconeF">
-                <img src="./img/svg/feuille.svg" class="iconeF">
-                <img src="./img/svg/leave.svg" class="iconeF">
+                <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                <img src="./img/svg/leave.svg" class="iconeFeuille">
             </div>
             <p>Lorem ipsum dolor sit, amet consecte</p>
             <p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p>
@@ -199,11 +239,11 @@
         </div>
         <div class="unCommentaire"><h5>"Super"</h5>
             <div class="feuille">
-                    <img src="./img/svg/feuille.svg" class="iconeF">
-                    <img src="./img/svg/feuille.svg" class="iconeF">
-                    <img src="./img/svg/feuille.svg" class="iconeF">
-                    <img src="./img/svg/feuille.svg" class="iconeF">
-                    <img src="./img/svg/leave.svg" class="iconeF">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/leave.svg" class="iconeFeuille">
                 </div>
             <p>Lorem ipsum dolor sit, amet consecte</p><p><img src="./img/user/68.jpg" alt="" class="user"> Julie.J <a>lire la suite</a></p></div>
         <i class="fas fa-chevron-right"></i></article>
