@@ -1,5 +1,5 @@
 window.onscroll = function() {myFunction()};
-      var header = document.querySelector('.deuxiemeNav');
+      var header = document.querySelector('nav');
       console.log(header);
       
       var sticky = header.offsetTop;

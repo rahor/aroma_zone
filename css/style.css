@@ -27,7 +27,7 @@ Reset
     html{
         /* Configuration de la valeur 1rem = 10px */
         font-size: 62.5%;
-    }
+   }
 
     img{
         max-width: 100%;
@@ -39,6 +39,7 @@ Reset
         color: rgb(56, 56, 56);
         background-color: white;
         border-bottom: 1rem solid  var(--main-color);
+        overflow: hidden visible;
     }
     
     main {
@@ -73,11 +74,26 @@ Reset
     .icone{
         max-width: 3.5rem;
     }
+
+    .icone:active{
+        transform: scale(0.9);
+    }
+    .icone:hover{
+        cursor: pointer;
+    }
 /**/
  
     h3{
         font-weight: bold;
         color: var(--main-color);
+    }
+
+    /* On evite la surbrillance des liens  */
+    a, span{
+        -moz-user-select: none; 
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     h5{
@@ -101,8 +117,16 @@ Reset
         text-decoration: none;  
         color: rgb(56, 56, 56);   
         font-size: 1.5rem;  
+        transition-duration: .6s;
     }
 
+    body a:active{
+        transform: scale(0.9);
+   
+    }
+    body a:hover{
+        cursor: pointer;
+    }
     
 /* Premiere Nav avec le logo */
     .logo{
@@ -137,6 +161,13 @@ Reset
         text-transform: uppercase;
         border-radius: .3rem;
         -webkit-border-radius : .3rem;
+        -moz-border-radius : .3rem;
+    }
+
+    .premiereNav a:hover{
+        background-color: var(--main-color);
+        color: white;
+        
     }
     
     
@@ -146,12 +177,50 @@ Reset
         border-bottom: 0.1px solid gainsboro;
         padding: 1rem;
         text-align: center; 
+        position: relative;
     }
     
     nav ul li{
        display: inline-block;
        padding: 2rem;
        }
+
+    /* Champs de recherche */
+    nav form{
+        position: absolute;
+        top : 0.5rem;
+        right: 5rem;
+    }
+
+    nav form input{
+        height: 4rem;
+        border: none;
+        font-size: 1.5rem;
+        float: left;
+        border-bottom: .1rem solid var(--main-color);
+    }
+
+    nav form input:focus, nav form input:active{
+        outline:none;
+        width: 25rem;
+    }
+
+    nav form span{
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    z-index: 1;
+    color: var(--main-color);
+    }
+
+    nav form span:hover{
+        cursor: pointer;
+    }
+
+    form {
+    vertical-align: middle;
+    position: relative;
+    }
 
 
     
@@ -161,6 +230,8 @@ Reset
         position: fixed;
         top: 0;
         width: 100%;
+        background-color: white;
+        z-index: 1;
       }
 
     header ul:nth-of-type(2){
@@ -206,8 +277,8 @@ FIN HEADER
     }
     .sectionProd article:last-of-type{
         padding-top: 5rem;
-        
     }
+
 
 
     /* Prix centré et entre 2 traits */
@@ -223,9 +294,9 @@ FIN HEADER
         content:''; 
         display:inline-block; 
         vertical-align: middle; 
-        width: 25%; 
+        width: 30%; 
         height: 1px; 
-        background: #000; }
+        background: grey; }
 
     .center:before { 
         margin-right: 3rem 
@@ -241,12 +312,29 @@ FIN HEADER
         align-items: center;
     }
 
+    .sectionProd label {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid var(--main-color);
+    }
+
+    label span:first-of-type{
+        font-size: 3rem;
+        margin-right: 1.5rem;
+    }
+    label span:last-of-type{
+        font-size: 3rem;
+        margin-left: 1.5rem;
+    }
+
+
     /* bouton Ajouter */
-    .sectionProd article:nth-of-type(2) a{
+    .sectionProd article:nth-of-type(2) a:first-of-type{
         background-color: var(--main-color);
         padding: 1.5rem;
         border-radius: .4rem;
         -webkit-border-radius : .4rem;
+        -moz-border-radius : .4rem;
         color: white;
         width: 50%;
         text-align: center;
@@ -255,7 +343,7 @@ FIN HEADER
 
     /* Pour le coeur */
     .sectionProd article:nth-of-type(2) img{
-        max-width: 6%;
+        width: 4rem;
     }
 
     select{
@@ -272,67 +360,66 @@ span{
     display: inline-block;
 }
 
-
 /* Jauge de composition */
-    .sectionDescription span{
+    #sectionDescription span{
     border-radius: .8rem;
     -webkit-border-radius : .8rem;
     padding: .2rem;
     }
-    .sectionDescription span:nth-of-type(1){
+    #sectionDescription span:nth-of-type(1){
         background-color: var(--color1);
         width: 10%;
     }
-    .sectionDescription span:nth-of-type(2){
+    #sectionDescription span:nth-of-type(2){
         background-color: var(--color2);
         width: 15%;
     }
-    .sectionDescription span:nth-of-type(3){
+    #sectionDescription span:nth-of-type(3){
         background-color: var(--color3);
         width: 25%;
     }
-    .sectionDescription span:nth-of-type(4){
+    #sectionDescription span:nth-of-type(4){
         background-color: var(--color4);
         width: 15%;
     }
-    .sectionDescription span:nth-of-type(5){
+    #sectionDescription span:nth-of-type(5){
         background-color: var(--color5);
         width: 10%;
     }
-    .sectionDescription span:nth-of-type(6){
+    #sectionDescription span:nth-of-type(6){
         background-color: var(--color6);
         width: 10%;
     }
-    .sectionDescription span:nth-of-type(7){
+    #sectionDescription span:nth-of-type(7){
         background-color: var(--color7);
         width: 8%;
     }
-    .sectionDescription span:nth-of-type(8){
+    #sectionDescription span:nth-of-type(8){
         background-color: var(--color8);
         width: 4%;
     }
 
     /* Jauge entiere */
-    .sectionDescription ul:first-of-type li{
+    #sectionDescription ul:first-of-type li{
         width: 100%;
         padding-top: 2rem;
     }
-    .sectionDescription ul:first-of-type li{
+    #sectionDescription ul:first-of-type li{
         display: inline-block;
     }
-    .sectionDescription ul:not(:first-of-type) li{
+    #sectionDescription ul:not(:first-of-type) li{
         position: relative; 
     }
 
     
     /* liste des ingédients */
-    .sectionDescription ul:not(:first-of-type){
+    #sectionDescription ul:not(:first-of-type){
         display: inline-block;
         list-style: none;
         padding:3rem 3rem 3rem 5rem;
     }
 
-    .sectionDescription ul:not(:first-of-type) li:before{
+    #sectionDescription ul:not(:first-of-type) li:before{
         content: '';
         position: absolute;
         height: .5rem;
@@ -345,38 +432,39 @@ span{
         border-radius: .4rem;  
     }
 
-    .sectionDescription ul:nth-of-type(2) li:nth-of-type(1):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(1):before{
         background-color: var(--color1);
     }
-    .sectionDescription ul:nth-of-type(2) li:nth-of-type(2):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(2):before{
         background-color: var(--color2);
     }
-    .sectionDescription ul:nth-of-type(2) li:nth-of-type(3):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(3):before{
         background-color: var(--color3);
     }
-    .sectionDescription ul:nth-of-type(2) li:nth-of-type(4):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(4):before{
         background-color: var(--color4);
     
     }
-    .sectionDescription ul:nth-of-type(3) li:nth-of-type(1):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(1):before{
         background-color: var(--color5);
     }
-    .sectionDescription ul:nth-of-type(3) li:nth-of-type(2):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(2):before{
         background-color: var(--color6);
     }
-    .sectionDescription ul:nth-of-type(3) li:nth-of-type(3):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(3):before{
         background-color: var(--color7);
     }
-    .sectionDescription ul:nth-of-type(3) li:nth-of-type(4):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(4):before{
         background-color: var(--color8);
     }
 
 
     /* Icones */
-    .sectionDescription article:last-of-type div{
+    #sectionDescription article:last-of-type div{
         display: inline-block;
         text-align: center;
         padding: 2rem;  
+        width: 30%;
     }
 /*
 FIN SECTION DESCRIPTION 
@@ -390,20 +478,39 @@ FIN SECTION DESCRIPTION
     }
 
     .sectionUtilisation::after{
-        content: 'aaa';
+        content: '';
         display: block;
         position: absolute;
-        width: 15rem;
-        height: 15rem;
-        right: 0;
+        width: 20rem;
+        height: 50rem;
+        right: -20rem;
         top: 50%;
         /* z-index: ; */
-        background-color: rebeccapurple;
         background-image: url('../img/deco/AAAAAAAAAAAAAA.png');
         background-size: contain;
         background-repeat: no-repeat;
-        transform: rotateZ(90);
+        z-index: -1;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
     }
+
+    .sectionUtilisation::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20rem;
+        height: 50rem;
+        left:-23rem;
+        top: -10rem;
+        /* z-index: ; */
+        background-image: url('../img/deco/z.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    -webkit-transform: rotate(-160deg);
+    transform: rotate(-160deg);
+    }
+
 
 
     /* Fiche conseils */
@@ -417,6 +524,7 @@ FIN SECTION DESCRIPTION
         margin-top: 2rem; 
         border-radius: .3rem;
         -webkit-border-radius : .3rem;
+        -moz-border-radius : .3rem;
     }
 
 
@@ -454,6 +562,7 @@ FIN SECTION UTILISATION
         top: 0; left: 0; bottom: 0; right: 0;
         border-radius: .4rem;
         -webkit-border-radius : .4rem;
+        -moz-border-radius : .4rem;
         padding: 1rem;
         text-transform: uppercase;
         background-color: var(--main-color);
@@ -482,6 +591,7 @@ FIN SECTION UTILISATION
         margin: 2rem; 
         border-radius: .3rem;
         -webkit-border-radius : .3rem;
+        -moz-border-radius : .3rem;
     }
 
     /* Taille max de l'image */
@@ -511,6 +621,7 @@ FIN DE SECTION PRODUITS RELATIFS
         width: calc(50% - 3rem);
         border-radius: .3rem;
         -webkit-border-radius : .3rem;
+        -moz-border-radius : .3rem;
         position: relative;
         padding: 2rem;
         display: inline-block;
@@ -560,6 +671,10 @@ FIN DE SECTION PRODUITS RELATIFS
     .avis span{
         color: var(--main-color);
         font-weight: bold;
+    }
+
+    .avis span:hover{
+    cursor: pointer;
     }
 
         /* Centré */    
@@ -630,8 +745,7 @@ FIN SECTION AVIS
 
     footer article:first-of-type div img:first-of-type {
         z-index: 10;
-        padding: 3rem;
-        padding-top: 6rem;
+        padding: 6rem 3rem 3rem 4rem;
         max-width: 17rem;
     }
     
