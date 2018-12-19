@@ -620,7 +620,7 @@ FIN SECTION AVIS
     
     /* 2eme article avec les listes */
     .foot{ 
-        display: flex;
+        /* display: flex; */
         justify-content: space-around;
         border-top: 0.1rem solid  var(--main-color);
         margin-top: 4rem;
@@ -631,6 +631,13 @@ FIN SECTION AVIS
     /* Mise en place des ornements apres les liste du footer */
     footer ul{
         position: relative;
+        display: inline-block;
+        width: calc(25% - 2.5rem);
+        vertical-align: top;
+    }
+
+    footer li{
+        padding: 1rem;
     }
     footer ul:after {
         content: url('../img/deco/Groupe\ 24.png');
@@ -640,6 +647,27 @@ FIN SECTION AVIS
         text-align: center;
         width: 100%;
     }
+
+    footer article:last-of-type img{
+        margin-top: 6rem; max-width: 30%;
+        position: relative;
+        display: inline-block;
+    }
+
+
+    footer article:last-of-type div{
+        background-color: #96FAAD;
+        position: relative;
+       
+    }
+
+    footer article:last-of-type img:not(:first-of-type){
+        background-color: #E5F676;
+        position: absolute;
+        max-width: 2rem;
+        top : 0;
+    }
+
    /* 
    FIN FOOTER 
    */
