@@ -384,6 +384,28 @@ FIN SECTION DESCRIPTION
 
 
 /* SECTION UTILISATION */
+
+    .sectionUtilisation{
+        position: relative;
+    }
+
+    .sectionUtilisation::after{
+        content: 'aaa';
+        display: block;
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        right: 0;
+        top: 50%;
+        /* z-index: ; */
+        background-color: rebeccapurple;
+        background-image: url('../img/deco/AAAAAAAAAAAAAA.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotateZ(90);
+    }
+
+
     /* Fiche conseils */
     .sectionUtilisation div{
         max-width: 90%;
