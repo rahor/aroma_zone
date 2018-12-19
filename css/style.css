@@ -11,7 +11,6 @@ Reset
         --color6 : #E99954;
         --color7 : #F67676;
         --color8 : #DF4343;
-
       }
 
     *{
@@ -120,10 +119,18 @@ Reset
         position: absolute;
         top: 0;
         right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width : 25%;
+        width : 30%;
+    }
+
+    .premiereNav li{
+        display: inline-block;
+        vertical-align: bottom; 
+    }
+
+    .premiereNav li *{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1rem;
     }
 
     /* Bouton de la nav */
@@ -232,7 +239,6 @@ FIN HEADER
         margin-left: 3rem 
     }
     
-/* A CHANGER */
     /* Partie de droite */
     .description div{
         display: flex;
@@ -410,7 +416,7 @@ FIN SECTION UTILISATION
 
 /* SECTION PERSONNALISATION */
 
-/* FLEX !!!! */
+/* !!! */
     .sectionPerso article:last-of-type{
         display: flex;
         align-items: center;
@@ -620,7 +626,6 @@ FIN SECTION AVIS
     
     /* 2eme article avec les listes */
     .foot{ 
-        /* display: flex; */
         justify-content: space-around;
         border-top: 0.1rem solid  var(--main-color);
         margin-top: 4rem;
@@ -649,25 +654,9 @@ FIN SECTION AVIS
     }
 
     footer article:last-of-type img{
-        margin-top: 6rem; max-width: 30%;
-        position: relative;
-        display: inline-block;
+        width: 30%;
+        margin-top: 8rem;
     }
-
-
-    footer article:last-of-type div{
-        background-color: #96FAAD;
-        position: relative;
-       
-    }
-
-    footer article:last-of-type img:not(:first-of-type){
-        background-color: #E5F676;
-        position: absolute;
-        max-width: 2rem;
-        top : 0;
-    }
-
    /* 
    FIN FOOTER 
    */
