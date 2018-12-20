@@ -336,13 +336,13 @@ FIN HEADER
         align-items: center;
     }
 
-    .far{
-        font-size: 4rem;
-        color: black;
+    .sectionProd .fa:first-of-type{
+        font-size: 5rem;
+        color: grey;
     }
 
-    .farColore{
-        color: red;
+    .farColor{
+        font-size: 10rem;
     }
     
     .sectionProd label {
@@ -617,6 +617,26 @@ FIN SECTION UTILISATION
         position: relative;
     }
 
+    .sectionBlog{
+        position: relative;
+    }
+
+    .sectionBlog::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20rem;
+        height: 50rem;
+        right: -20rem;
+        top: -5rem;
+        /* z-index: ; */
+        background-image: url('../img/deco/aa.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);;
+}
 
     .sectionProdRelatifs::before{
             content: '';
@@ -672,6 +692,13 @@ FIN DE SECTION PRODUITS RELATIFS
 */
 
 /* SECTION AVIS */
+
+    .avis{
+        position: relative;
+    }
+
+    
+
     /* Une fiche commentaire */
     .avis article > div {
         width: calc(50% - 3rem);
