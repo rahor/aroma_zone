@@ -406,9 +406,8 @@ span{
         background-repeat: no-repeat;
         z-index: -1;
     -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);;
+    transform: rotate(-20deg);
 }
-    }
 
 /* Jauge de composition */
     #sectionDescription span{
