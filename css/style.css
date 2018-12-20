@@ -128,7 +128,7 @@ Reset
     }
     
 /* Premiere Nav avec le logo */
-    .logo{
+    .premiereNav img:first-of-type{
         width: 45rem;
     }
 
@@ -314,7 +314,7 @@ FIN HEADER
         color: var(--main-color);
     }
 
-    .center:before, .center:after { 
+    .center::before, .center::after { 
         content:''; 
         display:inline-block; 
         vertical-align: middle; 
@@ -322,17 +322,20 @@ FIN HEADER
         height: 1px; 
         background: grey; }
 
-    .center:before { 
+    .center::before { 
         margin-right: 3rem 
     }
-    .center:after { 
+    .center::after { 
         margin-left: 3rem 
     }
     
     /* Partie de droite */
     .sectionProd article:nth-of-type(2) div{
+        display: -webkit-flex;
         display: flex;
+        -webkit-align-items: center;
         justify-content: space-around;
+        -webkit-justify-content: space-around;
         align-items: center;
     }
 
@@ -388,31 +391,11 @@ span{
     display: inline-block;
 }
 
-    #sectionDescription {
-        position: relative;
-    }
-
-    #sectionDescription::after{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20rem;
-        height: 50rem;
-        right: -20rem;
-        top: -0rem;
-        /* z-index: ; */
-        background-image: url('../img/deco/aa.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-}
-
 /* Jauge de composition */
     #sectionDescription span{
     border-radius: .8rem;
     -webkit-border-radius : .8rem;
+    -moz-border-radius : .8rem;
     padding: .2rem;
     }
     #sectionDescription span:nth-of-type(1){
@@ -468,7 +451,7 @@ span{
         padding:3rem 3rem 3rem 5rem;
     }
 
-    #sectionDescription ul:not(:first-of-type) li:before{
+    #sectionDescription ul:not(:first-of-type) li::before{
         content: '';
         position: absolute;
         height: .5rem;
@@ -478,32 +461,33 @@ span{
         top: 30%;
         left: -4rem; 
         -webkit-border-radius :.4rem;
+        -moz-border-radius :.4rem;
         border-radius: .4rem;  
     }
 
-    #sectionDescription ul:nth-of-type(2) li:nth-of-type(1):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(1)::before{
         background-color: var(--color1);
     }
-    #sectionDescription ul:nth-of-type(2) li:nth-of-type(2):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(2)::before{
         background-color: var(--color2);
     }
-    #sectionDescription ul:nth-of-type(2) li:nth-of-type(3):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(3)::before{
         background-color: var(--color3);
     }
-    #sectionDescription ul:nth-of-type(2) li:nth-of-type(4):before{
+    #sectionDescription ul:nth-of-type(2) li:nth-of-type(4)::before{
         background-color: var(--color4);
     
     }
-    #sectionDescription ul:nth-of-type(3) li:nth-of-type(1):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(1)::before{
         background-color: var(--color5);
     }
-    #sectionDescription ul:nth-of-type(3) li:nth-of-type(2):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(2)::before{
         background-color: var(--color6);
     }
-    #sectionDescription ul:nth-of-type(3) li:nth-of-type(3):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(3)::before{
         background-color: var(--color7);
     }
-    #sectionDescription ul:nth-of-type(3) li:nth-of-type(4):before{
+    #sectionDescription ul:nth-of-type(3) li:nth-of-type(4)::before{
         background-color: var(--color8);
     }
 
@@ -521,47 +505,6 @@ FIN SECTION DESCRIPTION
 
 
 /* SECTION UTILISATION */
-
-    .sectionUtilisation{
-        position: relative;
-    }
-
-    .sectionUtilisation::after{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20rem;
-        height: 50rem;
-        right: -20rem;
-        top: 50%;
-        /* z-index: ; */
-        background-image: url('../img/deco/aaaaaaaaa.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    }
-
-    .sectionUtilisation::before{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20rem;
-        height: 50rem;
-        left:-23rem;
-        top: -10rem;
-        /* z-index: ; */
-        background-image: url('../img/deco/z.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-    -webkit-transform: rotate(-160deg);
-    transform: rotate(-160deg);
-    }
-
-
-
     /* Fiche conseils */
     .sectionUtilisation div{
         max-width: 90%;
@@ -592,8 +535,10 @@ FIN SECTION UTILISATION
 
 /* !!! */
     .sectionPerso article:last-of-type{
+        display: -webkit-flex;
         display: flex;
         align-items: center;
+        -webkit-align-items: center;
     }
 
     .sectionPerso {
@@ -633,50 +578,6 @@ FIN SECTION UTILISATION
 */
 
 /* SECTION PRODUITS RELATIFS */
-
-    .sectionProdRelatifs{
-        position: relative;
-    }
-
-    .sectionBlog{
-        position: relative;
-    }
-
-    .sectionBlog::after{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20rem;
-        height: 50rem;
-        right: -20rem;
-        top: -5rem;
-        /* z-index: ; */
-        background-image: url('../img/deco/aa.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);;
-}
-
-    .sectionProdRelatifs::before{
-            content: '';
-            display: block;
-            position: absolute;
-            width: 20rem;
-            height: 50rem;
-            left:-26rem;
-            top: -20rem;
-            /* z-index: ; */
-            background-image: url('../img/deco/AAAAAAAAAAAAAA.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: -1;
-        -webkit-transform: rotate(20deg);
-        transform: rotate(20deg);
-    }
-
-
     /* fiche amenant vers le blog */
     .sectionBlog article div{
         max-width: 50%;
@@ -713,28 +614,6 @@ FIN DE SECTION PRODUITS RELATIFS
 */
 
 /* SECTION AVIS */
-
-    .avis{
-        position: relative;
-    }
-
-    .avis::before{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20rem;
-        height: 50rem;
-        left:-25rem;
-        bottom: -20rem;
-        /* z-index: ; */
-        background-image: url('../img/deco/aaaaaaaaa.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);   
-    }
-
     /* Une fiche commentaire */
     .avis article > div {
         width: calc(50% - 3rem);
@@ -755,7 +634,7 @@ FIN DE SECTION PRODUITS RELATIFS
     }
 
     /* Photo utilisateur */
-    .user{
+    .avis p img{
         width: 3rem;
         border-radius: 50%;
         -webkit-border-radius : 50%;
@@ -888,8 +767,8 @@ FIN SECTION AVIS
     footer li{
         padding: 1rem;
     }
-    footer ul:after {
-        content: url('../img/deco/Groupe\ 24.png');
+    footer ul::after {
+        content: url('../img/deco/ornement.png');
         display: inline-block;
         margin: 1rem auto 0rem;
         position: absolute;
@@ -905,7 +784,142 @@ FIN SECTION AVIS
    FIN FOOTER 
    */
     
-    /*
+
+
+/*
+DECORATION
+*/
+
+/* section produit */
+#sectionDescription {
+    position: relative;
+}
+
+#sectionDescription::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    right: -20rem;
+    top: -0rem;
+    background-image: url('../img/deco/brindilleV.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+/* fin section produit */
+
+/* section utilisation */
+.sectionUtilisation{
+    position: relative;
+}
+
+.sectionUtilisation::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    right: -20rem;
+    top: 50%;
+    /* z-index: ; */
+    background-image: url('../img/deco/brindilleVio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.sectionUtilisation::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    left:-23rem;
+    top: -10rem;
+    /* z-index: ; */
+    background-image: url('../img/deco/brindilleB1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+-webkit-transform: rotate(-160deg);
+transform: rotate(-160deg);
+}
+/* fin section utilisation */
+
+/* section produits relatifs */
+.sectionProdRelatifs{
+    position: relative;
+}
+
+.sectionBlog{
+    position: relative;
+}
+
+.sectionBlog::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    right: -20rem;
+    top: -5rem;
+    /* z-index: ; */
+    background-image: url('../img/deco/brindilleV.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);;
+}
+
+.sectionProdRelatifs::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    left:-26rem;
+    top: -20rem;
+    background-image: url('../img/deco/brindilleB2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+/* fin section produits relatifs */
+
+/* section avis */
+.avis{
+    position: relative;
+}
+
+.avis::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    left:-25rem;
+    bottom: -20rem;
+    /* z-index: ; */
+    background-image: url('../img/deco/brindilleVio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+-webkit-transform: rotate(10deg);
+transform: rotate(10deg);   
+}
+/* fin section avis */
+/* FIN DECORATION */
+
+/*
     #FA96BE
     #7AF02B
     #BEFA96
