@@ -388,6 +388,28 @@ span{
     display: inline-block;
 }
 
+    #sectionDescription {
+        position: relative;
+    }
+
+    #sectionDescription::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20rem;
+        height: 50rem;
+        right: -20rem;
+        top: -0rem;
+        /* z-index: ; */
+        background-image: url('../img/deco/aa.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);;
+}
+    }
+
 /* Jauge de composition */
     #sectionDescription span{
     border-radius: .8rem;
@@ -697,7 +719,22 @@ FIN DE SECTION PRODUITS RELATIFS
         position: relative;
     }
 
-    
+    .avis::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20rem;
+        height: 50rem;
+        left:-25rem;
+        bottom: -20rem;
+        /* z-index: ; */
+        background-image: url('../img/deco/aaaaaaaaa.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);   
+    }
 
     /* Une fiche commentaire */
     .avis article > div {
