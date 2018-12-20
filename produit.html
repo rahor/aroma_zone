@@ -24,7 +24,7 @@
                 <li><a href="#Apprendre">Apprendre</a></li>
                 <li><a href="#QuiSommesNous">Qui Sommes Nous ?</a></li>
                 <li><form><span class="icon"><i class="fa fa-search"></i></span>
-                    <input type="champs" placeholder="Article, recette..." /></form></li>
+                    <input type="text" placeholder="Article, recette..." maxlength="25"  /></form></li>
             </ul>
         </nav>
 
@@ -34,8 +34,13 @@
                 <li><a href="#sectionDescription">Description et composition</a></li>
                 <li><a href="#Utilisation">Utilisation</a></li>
                 <li><a href="#Personnalisation">Personnalisation</a></li>
-                <li><a href="#Avis">Avis</a></li>
-                <li><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/feuille.svg" class="iconeFeuille"><img src="./img/svg/leave.svg" class="iconeFeuille"></li>
+                <li><a href="#Avis">Avis</a>
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/feuille.svg" class="iconeFeuille">
+                    <img src="./img/svg/leave.svg" class="iconeFeuille">
+                </li>
                 <!-- <li><a href="#share"><img src="./img/svg/share.svg" alt="partager" class="iconeFeuille"></a></li> -->
         </ul>
     </header>
@@ -54,8 +59,11 @@
             
             <p class="center">7,90</p>
             <div>
-                <label><span>-</span>1<span>+</span></label>
-                <a>Ajouter au panier</a><a><img src="./img/svg/coeur.svg"></a>
+                <p><a id='moin'>-</a><input type="text" value="1" pattern="[0-9]" /><a id='plus'>+</a></p>
+                <a>Ajouter au panier</a>
+                <a>
+                    <i class="far fa-heart"></i>
+                </a>
             </div>
 
         </article>

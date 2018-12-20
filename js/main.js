@@ -1,13 +1,35 @@
+// Gestion du menu sticky
 window.onscroll = function() {myFunction()};
-      var header = document.querySelector('nav');
-      console.log(header);
+      var header = document.querySelectorAll('ul');
+      console.log(header[2]);
       
-      var sticky = header.offsetTop;
+      var sticky = header[2].offsetTop;
       
       function myFunction() {
         if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
+          header[2].classList.add("sticky");
         } else {
-          header.classList.remove("sticky");
+          header[2].classList.remove("sticky");
+}
         }
-      }
+
+        //Gestion de la quantité
+        var nombre = document.querySelectorAll('input')[1];
+        nombre.value = '1';
+
+        document.getElementById('plus').addEventListener('click', () => {
+          if (nombre.value < 99) {
+              nombre.value++;
+          }
+        });
+
+        document.getElementById('moin').addEventListener('click', () => {
+          if (nombre.value > 0) {
+              nombre.value--;
+          }
+        });
+
+
+
+
+  
