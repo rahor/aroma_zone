@@ -789,132 +789,75 @@ FIN SECTION AVIS
 /*
 DECORATION
 */
-
-/* section produit */
-#sectionDescription {
-    position: relative;
+/* sections*/
+#sectionDescription,.sectionUtilisation, .sectionProdRelatifs, .sectionBlog, .avis{
+   position: relative;
 }
 
-#sectionDescription::after{
+#sectionDescription::after, .sectionUtilisation::after, .sectionUtilisation::before, .avis::before, .sectionBlog::after, .sectionProdRelatifs::before{
     content: '';
     display: block;
     position: absolute;
     width: 20rem;
     height: 50rem;
-    right: -20rem;
-    top: -0rem;
-    background-image: url('../img/deco/brindilleV.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
+}
+
+#sectionDescription::after{
+    right: -20rem;
+    top: -0rem;
+    background-image: url('../img/deco/brindilleV.png');
     -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
 }
 /* fin section produit */
 
 /* section utilisation */
-.sectionUtilisation{
-    position: relative;
-}
-
 .sectionUtilisation::after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20rem;
-    height: 50rem;
     right: -20rem;
     top: 50%;
-    /* z-index: ; */
     background-image: url('../img/deco/brindilleVio.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
     -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
 }
 
 .sectionUtilisation::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20rem;
-    height: 50rem;
     left:-23rem;
     top: -10rem;
-    /* z-index: ; */
     background-image: url('../img/deco/brindilleB1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
--webkit-transform: rotate(-160deg);
-transform: rotate(-160deg);
+    -webkit-transform: rotate(-160deg);
+    transform: rotate(-160deg);
 }
 /* fin section utilisation */
 
 /* section produits relatifs */
-.sectionProdRelatifs{
-    position: relative;
-}
-
-.sectionBlog{
-    position: relative;
-}
-
 .sectionBlog::after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20rem;
-    height: 50rem;
     right: -20rem;
     top: -5rem;
     /* z-index: ; */
     background-image: url('../img/deco/brindilleV.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
     -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);;
 }
 
 .sectionProdRelatifs::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20rem;
-    height: 50rem;
     left:-26rem;
     top: -20rem;
     background-image: url('../img/deco/brindilleB2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
 }
 /* fin section produits relatifs */
 
 /* section avis */
-.avis{
-    position: relative;
-}
-
 .avis::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20rem;
-    height: 50rem;
     left:-25rem;
     bottom: -20rem;
-    /* z-index: ; */
     background-image: url('../img/deco/brindilleVio.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
--webkit-transform: rotate(10deg);
-transform: rotate(10deg);   
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);   
 }
 /* fin section avis */
 /* FIN DECORATION */
