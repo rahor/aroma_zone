@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -159,9 +159,9 @@
             <div>
                 <h4>2</h4>
                 <p>J'ajoute des huiles</p>
-                <img src="./img/produit/prodSup.png" alt="produit2">
+               <div class="choisirProd"><img src="./img/produit/prodSup.png" alt="produit2">
                 <a>Ajouter</a>
-                <p>...€</p>
+                <p>...€</p></div>
             </div>
             
             <p>+</p>
@@ -169,9 +169,9 @@
             <div>
                 <h4>3</h4>
                 <p>J'ajoute des huiles</p>
-                <img src="./img/produit/prodSup.png" alt="produit3">
+                <div class="choisirProd"><img src="./img/produit/prodSup.png" alt="produit3" >
                 <a>Ajouter</a>
-                <p>...€</p>
+                <p>...€</p></div>
             </div>
         
             <p>=</p>
@@ -190,23 +190,23 @@
         <h1>Produits relatifs</h1>
         <p>Avec votre produit nous vous conseillons également ces articles.</p>
         <div>
-        <article><img src="./img/produit/bet.png" alt="betterave"><p>Huile de betterave
+        <article class="choisirProd"><img src="./img/produit/bet.png"><p>Huile de betterave
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/produit/avocaaa.png" alt="avocat"><p>Huile d'avocat
+        <article class="choisirProd"><img src="./img/produit/avocaaa.png" alt="avocat"><p>Huile d'avocat
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/produit/rais.png" alt="raisin"><p>Huile de raisin
+        <article class="choisirProd"><img src="./img/produit/rais.png" alt="raisin"><p>Huile de raisin
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/produit/prun.png" alt="prune"><p>Huile de prune
+        <article class="choisirProd"><img src="./img/produit/prun.png" alt="prune"><p>Huile de prune
             </p>
             <p>20,50€</p>
         </article>
-        <article><img src="./img/produit/tap.png" alt="babassu"><p>Huile de babassu
+        <article class="choisirProd"><img src="./img/produit/tap.png" alt="babassu"><p>Huile de babassu
             </p>
             <p>20,50€</p>
         </article></div>
@@ -318,6 +318,22 @@
     </footer>
 
     <script src="./js/main.js"></script>
+
+    <script>
+            function allowDrop(ev) {
+              ev.preventDefault();
+            }
+            
+            function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+            }
+            </script>
 </body>
 
 </html>

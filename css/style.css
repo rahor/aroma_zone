@@ -331,7 +331,10 @@ FIN HEADER
     
     /* Partie de droite */
     .sectionProd article:nth-of-type(2) div{
+        display: -webkit-box;
+        display: -moz-box;
         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         -webkit-align-items: center;
         justify-content: space-around;
@@ -535,7 +538,10 @@ FIN SECTION UTILISATION
 
 /* !!! */
     .sectionPerso article:last-of-type{
+        display: -webkit-box;
+        display: -moz-box;
         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         align-items: center;
         -webkit-align-items: center;

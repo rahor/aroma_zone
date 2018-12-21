@@ -26,3 +26,37 @@
     else coeur.style.color = 'grey';
   });
   
+
+// Choisir ses produits
+  function handleDragStart(e) {
+    elementDrag = this;
+    e.dataTransfer.setData('text/html', this.innerHTML);
+  }
+  
+  function handleDragOver(e) {
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
+    return false;
+  }
+    
+  function handleDrop(e) {
+  
+    // Si on drag and drop un élément sur lui même on ne fait rien
+    if (elementDrag != this) {
+      // Echange des colonnes
+      elementDrag.innerHTML = this.innerHTML;
+      this.innerHTML = e.dataTransfer.getData('text/html');
+    }
+  }
+  
+
+  // On recupere tous les produits et les cases ajouter
+  var cols = document.querySelectorAll('.choisirProd');
+  [].forEach.call(cols, function(col) {
+    col.addEventListener('dragstart', handleDragStart, false);
+    col.addEventListener('dragover', handleDragOver, false);
+    col.addEventListener('drop', handleDrop, false);
+  });
+  
+  
