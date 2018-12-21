@@ -579,6 +579,11 @@ FIN SECTION UTILISATION
         font-weight: 100;
         color: #555;
     }
+
+
+    .choisirProd{
+        box-shadow: 1px 1px 6px #555;
+    }
 /*
  FIN SECTION PERSONNALISATION 
 */
@@ -800,7 +805,7 @@ DECORATION
    position: relative;
 }
 
-#sectionDescription::after, .sectionUtilisation::after, .sectionUtilisation::before, .avis::before, .sectionBlog::after, .sectionProdRelatifs::before{
+#sectionDescription::after, .sectionUtilisation::after, .sectionUtilisation::before, .avis::before, .sectionBlog::after, .sectionProdRelatifs::before,.sectionProdRelatifs::after{
     content: '';
     display: block;
     position: absolute;
@@ -845,9 +850,17 @@ DECORATION
     /* z-index: ; */
     background-image: url('../img/deco/brindilleV.png');
     -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);;
+    transform: rotate(-20deg);
 }
 
+.sectionProdRelatifs::after{
+    right: 0rem;
+    top: -5rem;
+    background-image: url('../img/svg/fc.svg');
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+
+}
 .sectionProdRelatifs::before{
     left:-26rem;
     top: -20rem;

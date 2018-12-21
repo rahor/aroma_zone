@@ -7,17 +7,30 @@
       else header[2].classList.remove("sticky");
   } 
  
-//Gestion de la quantité
+//Gestion de la quantité et du prix
+  // Recuperation des eléments
   var nombre = document.querySelectorAll('input')[1];
   nombre.value = '1';
 
+  var prix = document.getElementsByClassName('center')[0];
+  console.log(prix.innerHTML);
+
+  // incrementation
   document.getElementById('plus').addEventListener('click', () => {
-    if (nombre.value < 99) nombre.value++;
+    if (nombre.value < 99){
+     nombre.value++;
+    prix.innerHTML = (7.90 * nombre.value).toFixed(2).concat('€');
+    } 
   });
 
+  // decrementation
   document.getElementById('moin').addEventListener('click', () => {
-    if (nombre.value > 0) nombre.value--;
+    if (nombre.value > 0) {
+      nombre.value--;
+      prix.innerHTML = (7.90 * nombre.value).toFixed(2).concat('€');
+    }
   });
+
 
 //Affichage du coeur
   var coeur = document.querySelectorAll('i')[1];
